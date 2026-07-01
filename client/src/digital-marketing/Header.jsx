@@ -2,10 +2,10 @@ import React from 'react';
 
 export default function Header({ onBookClick }) {
   return (
-    <header className="sticky top-0 z-50 bg-bg-dark/90 backdrop-blur-md border-b border-line-light">
-      <div className="max-w-[1080px] mx-auto px-5 flex items-center justify-between h-[62px]">
+    <header className="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-black/10">
+      <div className="max-w-[1080px] mx-auto px-5 flex items-center justify-between h-[76px]">
         <a href="#" className="flex items-center">
-          <img src="/logo/logo.png" alt="BM Academy Logo" className="h-10 w-auto object-contain" />
+          <img src="/logo/logo.png" alt="BM Academy Logo" className="h-14 w-auto object-contain" />
         </a>
         <button 
           onClick={onBookClick}

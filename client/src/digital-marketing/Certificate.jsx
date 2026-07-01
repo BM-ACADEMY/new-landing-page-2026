@@ -70,24 +70,37 @@ export default function Certificate() {
         </div>
         */}
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mt-9">
-          <div className="reveal overflow-hidden rounded-2xl border border-white/9 aspect-[4/3]">
-            <img src="/DM/dmclass1.webp" alt="DM Class 1" className="w-full h-full object-cover transition-transform duration-300 hover:scale-105" />
+        <div className="mt-16">
+          <h3 className="font-sora font-bold text-[1.25rem] sm:text-[1.8rem] leading-[1.14] tracking-[-0.02em] mt-3 mb-6">
+            Classroom Images
+          </h3>
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+            <div className="reveal overflow-hidden rounded-2xl border border-white/9 aspect-[4/3]">
+              <img src="/DM/dmclass1.png" alt="DM Class 1" className="w-full h-full object-cover transition-transform duration-300 hover:scale-105" />
+            </div>
+            <div className="reveal overflow-hidden rounded-2xl border border-white/9 aspect-[4/3]">
+              <img src="/DM/dmclass2.jpeg" alt="DM Class 2" className="w-full h-full object-cover transition-transform duration-300 hover:scale-105" />
+            </div>
+            <div className="reveal overflow-hidden rounded-2xl border border-white/9 aspect-[4/3]">
+              <img src="/DM/dmclass3.png" alt="DM Class 3" className="w-full h-full object-cover transition-transform duration-300 hover:scale-105" />
+            </div>
           </div>
-          <div className="reveal overflow-hidden rounded-2xl border border-white/9 aspect-[4/3]">
-            <img src="/DM/dmclass2.webp" alt="DM Class 2" className="w-full h-full object-cover transition-transform duration-300 hover:scale-105" />
-          </div>
-          <div className="reveal overflow-hidden rounded-2xl border border-white/9 aspect-[4/3]">
-            <img src="/DM/dmclass3.webp" alt="DM Class 3" className="w-full h-full object-cover transition-transform duration-300 hover:scale-105" />
-          </div>
-          <div className="reveal overflow-hidden rounded-2xl border border-white/9 aspect-[4/3]">
-            <img src="/DM/dmclass4.webp" alt="DM Class 4" className="w-full h-full object-cover transition-transform duration-300 hover:scale-105" />
-          </div>
-          <div className="reveal overflow-hidden rounded-2xl border border-white/9 aspect-[4/3]">
-            <img src="/DM/dmclass5.webp" alt="DM Class 5" className="w-full h-full object-cover transition-transform duration-300 hover:scale-105" />
-          </div>
-          <div className="reveal overflow-hidden rounded-2xl border border-white/9 aspect-[4/3]">
-            <img src="/DM/dmclass6.webp" alt="DM Class 6" className="w-full h-full object-cover transition-transform duration-300 hover:scale-105" />
+        </div>
+
+        <div className="mt-12">
+          <h3 className="font-sora font-bold text-[1.25rem] sm:text-[1.8rem] leading-[1.14] tracking-[-0.02em] mt-3 mb-6">
+            Gallery Images
+          </h3>
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+            <div className="reveal overflow-hidden rounded-2xl border border-white/9 aspect-[4/3]">
+              <img src="/DM/dmclass7.jpg" alt="DM Class 4" className="w-full h-full object-cover transition-transform duration-300 hover:scale-105" />
+            </div>
+            <div className="reveal overflow-hidden rounded-2xl border border-white/9 aspect-[4/3]">
+              <img src="/DM/dmclass8.jpg" alt="DM Class 5" className="w-full h-full object-cover transition-transform duration-300 hover:scale-105" />
+            </div>
+            <div className="reveal overflow-hidden rounded-2xl border border-white/9 aspect-[4/3]">
+              <img src="/DM/dmclass9.jpg" alt="DM Class 6" className="w-full h-full object-cover transition-transform duration-300 hover:scale-105" />
+            </div>
           </div>
         </div>
       </div>

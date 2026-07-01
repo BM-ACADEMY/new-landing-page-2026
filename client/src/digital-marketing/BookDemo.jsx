@@ -38,7 +38,7 @@ export default function BookDemo({ selectedProgram, isModal = false, onClose }) 
     const program = selectedProgram || "";
     const formattedDate = new Date(dateTime).toLocaleString();
 
-    const WEBHOOK_URL = "https://script.google.com/macros/s/AKfycbzIwvzCkdNNUUz-A9l4t_CeQ0bAjsn8VuCthkpqlo5nm3yn0rPBhJndfbMgVAwbsI3g/exec";
+    const WEBHOOK_URL = "https://script.google.com/macros/s/AKfycbydmzGHeDipHerm2AQClYu5UMv9QIZfGP1QWz4bzXsEgAaY2lPbN-E9uTEbkTXB1EPo/exec";
     
     if (WEBHOOK_URL) {
       fetch(WEBHOOK_URL, {
@@ -53,7 +53,7 @@ export default function BookDemo({ selectedProgram, isModal = false, onClose }) 
           Location: location.trim(),
           DateTime: formattedDate,
           Note: note.trim(),
-          Timestamp: new Date().toLocaleString()
+          Timestamp: new Date().toLocaleString() 
         })
       }).catch(err => console.error("Error sending to sheet:", err));
     }

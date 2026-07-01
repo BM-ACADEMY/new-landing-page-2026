@@ -2,17 +2,21 @@ import React, { useState, useEffect } from 'react';
 import Header from './Header';
 import Trustbar from './Trustbar';
 import Hero from './Hero';
+import WebinarSection from './WebinarSection';
 import Fears from './Fears';
 import Skills from './Skills';
 import About from './About';
+import Roadmap from './Roadmap';
 import Guarantee from './Guarantee';
 import Tracks from './Tracks';
 import Certificate from './Certificate';
+import SampleCertificate from './SampleCertificate';
 import LiveStatus from './LiveStatus';
-import Transformation from './Transformation';
+// import Transformation from './Transformation';
 import Testimonials from './Testimonials';
 import FAQ from './FAQ';
 import BookDemo from './BookDemo';
+import WebinarForm from './WebinarForm';
 import FinalCTA from './FinalCTA';
 import Footer from './Footer';
 import MobileCTA from './MobileCTA';
@@ -21,6 +25,7 @@ import FloatingWhatsApp from './FloatingWhatsApp';
 export default function DigitalMarketing() {
   const [selectedProgram, setSelectedProgram] = useState('');
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const [isWebinarModalOpen, setIsWebinarModalOpen] = useState(false);
 
   const handleSelectProgram = (program) => {
     setSelectedProgram(program);
@@ -29,6 +34,10 @@ export default function DigitalMarketing() {
 
   const handleOpenModal = () => {
     setIsModalOpen(true);
+  };
+
+  const handleOpenWebinarModal = () => {
+    setIsWebinarModalOpen(true);
   };
 
   useEffect(() => {
@@ -60,11 +69,14 @@ export default function DigitalMarketing() {
       <Fears />
       <Skills />
       <About />
-      <Guarantee />
+      <Roadmap />
+      <WebinarSection onBookClick={handleOpenWebinarModal} />
+      <SampleCertificate />
       <Tracks onSelectProgram={handleSelectProgram} />
       <Certificate />
+      <Guarantee />
       <LiveStatus />
-      <Transformation />
+      {/* <Transformation /> */}
       <Testimonials />
       <FAQ />
       <BookDemo selectedProgram={selectedProgram} />
@@ -79,6 +91,17 @@ export default function DigitalMarketing() {
           <div className="relative w-full max-w-[560px] select-none">
             <div className="max-h-[90vh] overflow-y-auto rounded-2xl bg-panel border border-white/20">
               <BookDemo selectedProgram={selectedProgram} isModal={true} onClose={() => setIsModalOpen(false)} />
+            </div>
+          </div>
+        </div>
+      )}
+
+      {/* Webinar Modal Overlay */}
+      {isWebinarModalOpen && (
+        <div className="fixed inset-0 z-50 bg-black/80 backdrop-blur-sm flex items-center justify-center p-4">
+          <div className="relative w-full max-w-[560px] select-none">
+            <div className="max-h-[90vh] overflow-y-auto rounded-2xl bg-panel border border-white/20">
+              <WebinarForm isModal={true} onClose={() => setIsWebinarModalOpen(false)} />
             </div>
           </div>
         </div>

@@ -25,7 +25,7 @@ export default function Testimonials() {
   }, []);
 
   return (
-    <section className="py-[58px]">
+    <section id="testimonials" className="py-[58px]">
       <div className="max-w-[1080px] mx-auto px-5" ref={containerRef}>
         <span className="text-[0.78rem] font-bold tracking-[0.06em] uppercase text-pink-brand">// real students, real Google reviews</span>
         <h2 className="font-sora font-extrabold text-[1.5rem] sm:text-[2.2rem] leading-[1.14] tracking-[-0.02em] mt-3 mb-0">

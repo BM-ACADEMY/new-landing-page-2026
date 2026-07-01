@@ -14,19 +14,21 @@ import Testimonials from './Testimonials';
 import FAQ from './FAQ';
 import BookDemo from './BookDemo';
 import FinalCTA from './FinalCTA';
-import Map from './Map';
 import Footer from './Footer';
 import MobileCTA from './MobileCTA';
+import FloatingWhatsApp from './FloatingWhatsApp';
 
 export default function DigitalMarketing() {
   const [selectedProgram, setSelectedProgram] = useState('');
+  const [isModalOpen, setIsModalOpen] = useState(false);
 
   const handleSelectProgram = (program) => {
     setSelectedProgram(program);
-    const bookSection = document.getElementById('book');
-    if (bookSection) {
-      bookSection.scrollIntoView({ behavior: 'smooth' });
-    }
+    setIsModalOpen(true);
+  };
+
+  const handleOpenModal = () => {
+    setIsModalOpen(true);
   };
 
   useEffect(() => {
@@ -52,9 +54,9 @@ export default function DigitalMarketing() {
 
   return (
     <div className="min-h-screen bg-bg-dark text-text-brand pb-[74px] sm:pb-0 relative font-inter">
-      <Header />
+      <Header onBookClick={handleOpenModal} />
       <Trustbar />
-      <Hero />
+      <Hero onBookClick={handleOpenModal} />
       <Fears />
       <Skills />
       <About />
@@ -66,10 +68,21 @@ export default function DigitalMarketing() {
       <Testimonials />
       <FAQ />
       <BookDemo selectedProgram={selectedProgram} />
-      <FinalCTA />
-      <Map />
-      <Footer />
-      <MobileCTA />
+      <FinalCTA onBookClick={handleOpenModal} />
+      <Footer onBookClick={handleOpenModal} />
+      <MobileCTA onBookClick={handleOpenModal} />
+      <FloatingWhatsApp />
+
+      {/* Booking Modal Overlay */}
+      {isModalOpen && (
+        <div className="fixed inset-0 z-50 bg-black/80 backdrop-blur-sm flex items-center justify-center p-4">
+          <div className="relative w-full max-w-[560px] select-none">
+            <div className="max-h-[90vh] overflow-y-auto rounded-2xl bg-panel border border-white/20">
+              <BookDemo selectedProgram={selectedProgram} isModal={true} onClose={() => setIsModalOpen(false)} />
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   );
 }

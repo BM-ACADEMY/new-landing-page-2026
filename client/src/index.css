@@ -30,6 +30,9 @@
     line-height: 1.55;
     -webkit-font-smoothing: antialiased;
   }
+  section {
+    scroll-margin-top: 80px;
+  }
 }
 
 /* Animations and helper classes */

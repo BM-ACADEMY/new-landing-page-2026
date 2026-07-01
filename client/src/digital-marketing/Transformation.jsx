@@ -42,17 +42,17 @@ export default function Transformation() {
             <p className="text-muted-brand text-[0.86rem]">No engineering or specialized degree. Applying for jobs and getting rejected, or stuck in a low-paying job unrelated to any real skill.</p>
           </div>
           <div className="reveal bg-panel border border-white/9 rounded-2xl p-5 px-[22px]">
-            <div className="text-[0.7rem] text-pink-brand font-bold uppercase tracking-[0.04em]">Month 1</div>
+            <div className="text-[0.7rem] text-pink-brand font-bold uppercase tracking-[0.04em]">Week 1–4</div>
             <h4 className="font-sora font-bold text-base mt-1.5 mb-1.5">First real skill</h4>
             <p className="text-muted-brand text-[0.86rem]">Learns SEO and ad fundamentals. For the first time, has something concrete to put on a resume — actual skill, not just a degree line.</p>
           </div>
           <div className="reveal bg-panel border border-white/9 rounded-2xl p-5 px-[22px]">
-            <div className="text-[0.7rem] text-pink-brand font-bold uppercase tracking-[0.04em]">Month 2</div>
+            <div className="text-[0.7rem] text-pink-brand font-bold uppercase tracking-[0.04em]">Week 5–8</div>
             <h4 className="font-sora font-bold text-base mt-1.5 mb-1.5">Running live campaigns</h4>
             <p className="text-muted-brand text-[0.86rem]">Manages real Meta and Google Ads accounts. Confidence builds — can explain to anyone exactly how a brand gets customers online.</p>
           </div>
           <div className="reveal bg-panel border border-white/9 rounded-2xl p-5 px-[22px]">
-            <div className="text-[0.7rem] text-pink-brand font-bold uppercase tracking-[0.04em]">Month 3</div>
+            <div className="text-[0.7rem] text-pink-brand font-bold uppercase tracking-[0.04em]">Week 9–12</div>
             <h4 className="font-sora font-bold text-base mt-1.5 mb-1.5">Portfolio &amp; interviews</h4>
             <p className="text-muted-brand text-[0.86rem]">Has a certificate and a live campaign portfolio. Walks into interviews with proof of work, not just promises.</p>
           </div>

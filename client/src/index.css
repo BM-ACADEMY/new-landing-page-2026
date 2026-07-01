@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-bg-dark: #0A0A12;
+  --color-panel: #14121F;
+  --color-panel-2: #1C1830;
+  --color-line-light: rgba(255, 255, 255, 0.09);
+  --color-pink-brand: #FF3D81;
+  --color-violet-brand: #7C5CFC;
+  --color-blue-brand: #3DA5FF;
+  --color-lime-brand: #C6F24E;
+  --color-amber-brand: #FFB020;
+  --color-text-brand: #F3EFFA;
+  --color-muted-brand: #9C95B6;
+  --color-green-brand: #4ADE80;
+
+  --font-sora: 'Sora', sans-serif;
+  --font-inter: 'Inter', sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    background-color: #0A0A12;
+    color: #F3EFFA;
+    font-family: 'Inter', sans-serif;
+    line-height: 1.55;
+    -webkit-font-smoothing: antialiased;
+  }
+}
+
+/* Animations and helper classes */
+.reveal {
+  opacity: 0;
+  transform: translateY(22px);
+  transition: opacity .6s, transform .6s;
+}
+
+.reveal.in {
+  opacity: 1;
+  transform: none;
+}
+
+.gradtext {
+  background: linear-gradient(100deg, #FF3D81, #7C5CFC 55%, #3DA5FF);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}

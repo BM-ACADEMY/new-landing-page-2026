@@ -35,7 +35,7 @@ export default function SampleCertificate() {
         </h2>
         <div className="reveal overflow-hidden rounded-2xl">
           <img
-            src="/images/Certificate.jpg"
+            src="/images/Certificate.webp"
             alt="Sample Webinar Certificate"
             className="w-full max-w-[700px] h-auto object-cover transition-transform duration-300  mx-auto"
           />

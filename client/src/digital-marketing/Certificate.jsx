@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useRef } from "react";
 
 export default function Certificate() {
   const containerRef = useRef(null);
@@ -8,15 +8,15 @@ export default function Certificate() {
       (entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
-            entry.target.classList.add('in');
+            entry.target.classList.add("in");
             observer.unobserve(entry.target);
           }
         });
       },
-      { threshold: 0.14 }
+      { threshold: 0.14 },
     );
 
-    const elements = containerRef.current.querySelectorAll('.reveal');
+    const elements = containerRef.current.querySelectorAll(".reveal");
     elements.forEach((el) => observer.observe(el));
 
     return () => {
@@ -27,12 +27,18 @@ export default function Certificate() {
   return (
     <section className="py-[58px]">
       <div className="max-w-[1080px] mx-auto px-5" ref={containerRef}>
-        <span className="text-[0.78rem] font-bold tracking-[0.06em] uppercase text-pink-brand">// proof you can show employers</span>
+        <span className="text-[0.78rem] font-bold tracking-[0.06em] uppercase text-pink-brand">
+          // proof you can show employers
+        </span>
         <h2 className="font-sora font-extrabold text-[1.5rem] sm:text-[2.2rem] leading-[1.14] tracking-[-0.02em] mt-3 mb-0">
           Get a certificate that backs up your skills
         </h2>
         <p className="text-muted-brand text-[1.02rem] mt-3.5 max-w-[620px]">
-          On completing the program, every student receives a BM Academy Certificate of Completion — recognized by our hiring and placement partners — along with a portfolio of live campaigns you personally ran. This is what you show in interviews and on LinkedIn, instead of just saying you "did a course."
+          On completing the program, every student receives a BM Academy
+          Certificate of Completion — recognized by our hiring and placement
+          partners — along with a portfolio of live campaigns you personally
+          ran. This is what you show in interviews and on LinkedIn, instead of
+          just saying you "did a course."
         </p>
 
         {/*
@@ -76,13 +82,25 @@ export default function Certificate() {
           </h3>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
             <div className="reveal overflow-hidden rounded-2xl border border-white/9 aspect-[4/3]">
-              <img src="/DM/dmclass1.png" alt="DM Class 1" className="w-full h-full object-cover transition-transform duration-300 hover:scale-105" />
+              <img
+                src="/DM/dmclass1.webp"
+                alt="DM Class 1"
+                className="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
+              />
             </div>
             <div className="reveal overflow-hidden rounded-2xl border border-white/9 aspect-[4/3]">
-              <img src="/DM/dmclass2.jpeg" alt="DM Class 2" className="w-full h-full object-cover transition-transform duration-300 hover:scale-105" />
+              <img
+                src="/DM/dmclass2.webp"
+                alt="DM Class 2"
+                className="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
+              />
             </div>
             <div className="reveal overflow-hidden rounded-2xl border border-white/9 aspect-[4/3]">
-              <img src="/DM/dmclass3.png" alt="DM Class 3" className="w-full h-full object-cover transition-transform duration-300 hover:scale-105" />
+              <img
+                src="/DM/dmclass3.webp"
+                alt="DM Class 3"
+                className="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
+              />
             </div>
           </div>
         </div>
@@ -93,13 +111,25 @@ export default function Certificate() {
           </h3>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
             <div className="reveal overflow-hidden rounded-2xl border border-white/9 aspect-[4/3]">
-              <img src="/DM/dmclass7.jpg" alt="DM Class 4" className="w-full h-full object-cover transition-transform duration-300 hover:scale-105" />
+              <img
+                src="/DM/dmclass7.webp"
+                alt="DM Class 4"
+                className="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
+              />
             </div>
             <div className="reveal overflow-hidden rounded-2xl border border-white/9 aspect-[4/3]">
-              <img src="/DM/dmclass8.jpg" alt="DM Class 5" className="w-full h-full object-cover transition-transform duration-300 hover:scale-105" />
+              <img
+                src="/DM/dmclass8.webp"
+                alt="DM Class 5"
+                className="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
+              />
             </div>
             <div className="reveal overflow-hidden rounded-2xl border border-white/9 aspect-[4/3]">
-              <img src="/DM/dmclass9.jpg" alt="DM Class 6" className="w-full h-full object-cover transition-transform duration-300 hover:scale-105" />
+              <img
+                src="/DM/dmclass9.webp"
+                alt="DM Class 6"
+                className="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
+              />
             </div>
           </div>
         </div>

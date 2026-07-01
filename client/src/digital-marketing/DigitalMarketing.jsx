@@ -63,7 +63,7 @@ export default function DigitalMarketing() {
 
   return (
     <div className="min-h-screen bg-bg-dark text-text-brand pb-[74px] sm:pb-0 relative font-inter">
-      <Header onBookClick={handleOpenModal} />
+      <Header onBookClick={handleOpenWebinarModal} />
       <Trustbar />
       <Hero onBookClick={handleOpenModal} />
       <Fears />
@@ -82,7 +82,7 @@ export default function DigitalMarketing() {
       <BookDemo selectedProgram={selectedProgram} />
       <FinalCTA onBookClick={handleOpenModal} />
       <Footer onBookClick={handleOpenModal} />
-      <MobileCTA onBookClick={handleOpenModal} />
+      <MobileCTA onBookClick={handleOpenWebinarModal} />
       <FloatingWhatsApp />
 
       {/* Booking Modal Overlay */}

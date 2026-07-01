@@ -11,7 +11,7 @@ export default function MobileCTA({ onBookClick }) {
           <path d="M4.5 16.5c-1.5 1.25-2.5 3.5-2.5 3.5s2.25-1 3.5-2.5L13 10l-2.5-2.5z" />
           <path d="M12 9l9-9-3 12-2.5-2.5z" />
         </svg>
-        Book Free 1:1 Demo
+        Register for Free Webinar
       </button>
     </div>
   );

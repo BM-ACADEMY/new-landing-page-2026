@@ -61,10 +61,10 @@ export default function Hero({ onBookClick }) {
             DIGITAL MARKETING PRO · NEW BATCH FORMING
           </span>
           <h1 className="font-sora font-extrabold text-[2rem] sm:text-[3.2rem] leading-[1.08] tracking-[-0.025em] mt-5 mb-0">
-            No engineering degree needed. <span className="gradtext">Job-ready digital marketer</span> in 3 months.
+            No Engineering degree needed. <span className="gradtext">Job-ready digital marketer</span> in 3 months.
           </h1>
           <p className="text-[#C8C2DC] text-[1rem] sm:text-[1.1rem] mt-[18px] mb-[28px] max-w-[540px]">
-            Learn <b className="text-white">Meta &amp; Google Ads, SEO, and AI marketing tools</b> by running real live campaigns — not just watching videos. Open to students from any background: arts, commerce, diploma, or drop-outs. No mass webinar — only a free, personal 1:1 demo session for you.
+            Learn <b className="text-white">Meta &amp; Google Ads, SEO, and AI marketing tools</b> by running real live campaigns — not just watching videos. Open to students from any background: Arts, Commerce, Diploma, or drop-outs. No mass webinar — only a free, personal 1:1 demo session for you.
           </p>
           <div className="flex flex-wrap gap-[13px]">
             <button 

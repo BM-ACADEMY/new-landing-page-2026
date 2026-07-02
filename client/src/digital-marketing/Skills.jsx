@@ -29,7 +29,7 @@ export default function Skills() {
       <div className="max-w-[1080px] mx-auto px-5" ref={containerRef}>
         <span className="text-[0.78rem] font-bold tracking-[0.06em] uppercase text-pink-brand">// the skill stack</span>
         <h2 className="font-sora font-extrabold text-[1.5rem] sm:text-[2.2rem] leading-[1.14] tracking-[-0.02em] mt-3 mb-0">
-          3 core skills. 1 job-ready you.
+          3 Core Skills. <span className="gradtext">1 Job-Ready You.</span>
         </h2>
         <p className="text-muted-brand text-[1.02rem] mt-3.5 max-w-[620px]">
           Every skill is practiced on a live project, so your resume shows real campaigns you actually ran — not just a certificate.

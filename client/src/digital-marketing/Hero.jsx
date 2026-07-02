@@ -64,14 +64,14 @@ export default function Hero({ onBookClick }) {
             No Engineering degree needed. <span className="gradtext">Job-ready digital marketer</span> in 3 months.
           </h1>
           <p className="text-[#C8C2DC] text-[1rem] sm:text-[1.1rem] mt-[18px] mb-[28px] max-w-[540px]">
-            Learn <b className="text-white">Meta &amp; Google Ads, SEO, and AI marketing tools</b> by running real live campaigns — not just watching videos. Open to students from any background: Arts, Commerce, Diploma, or drop-outs. No mass webinar — only a free, personal 1:1 demo session for you.
+            Learn <b className="text-white">Meta &amp; Google Ads, SEO, and AI marketing tools</b> by running real live campaigns — not just watching videos. Open to students from any background: Arts, Commerce, Diploma, or drop-outs. No mass webinar — only a free, personal demo session for you.
           </p>
           <div className="flex flex-wrap gap-[13px]">
             <button 
               onClick={onBookClick}
               className="inline-flex items-center justify-center gap-2.5 font-bold text-base px-[26px] py-[15px] rounded-xl cursor-pointer border-none bg-gradient-to-r from-pink-brand via-violet-brand to-blue-brand text-white shadow-[0_14px_34px_-12px_rgba(255,61,129,0.55)] transition-all duration-200 hover:-translate-y-0.5 hover:brightness-[1.06]"
             >
-              Book Your Free 1:1 Demo →
+              Book Your Free Demo →
             </button>
             <a 
               className="inline-flex items-center justify-center gap-2.5 font-bold text-base px-[26px] py-[15px] rounded-xl cursor-pointer border border-white/9 bg-transparent text-white transition-all duration-200 hover:border-pink-brand hover:text-pink-brand"

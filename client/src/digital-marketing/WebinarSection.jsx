@@ -9,7 +9,7 @@ export default function WebinarSection({ onBookClick }) {
       <div className="max-w-[800px] mx-auto px-5 text-center relative z-10">
         <span className="text-[0.78rem] font-bold tracking-[0.06em] uppercase text-[#f7367a]">// free training</span>
         <h2 className="font-sora font-extrabold text-[1.8rem] sm:text-[2.6rem] leading-[1.14] tracking-[-0.025em] mt-3 mb-4 text-white">
-          Stuck without a job? Learn the exact roadmap to start your Digital Marketing career — in just 60 minutes, with a certificate included.
+          From Zero Experience to Job-Ready – Completely Free. Join industry experts live and learn exactly what it takes to build a career in Digital Marketing.
         </h2>
         <p className="text-muted-brand text-[0.96rem] sm:text-[1.05rem] leading-relaxed max-w-[700px] mx-auto mb-10">
           Join our FREE Live Webinar on July 11, 5:00 PM – 6:00 PM, and discover the real, practical roadmap to land your first Digital Marketing job. No fluff, no sales pitch — just actionable steps you can start using immediately. Every attendee also receives a Hard Copy Certificate to mark the beginning of their journey.

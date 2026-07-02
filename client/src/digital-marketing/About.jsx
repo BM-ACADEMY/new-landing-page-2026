@@ -34,7 +34,7 @@ export default function About() {
         
         <div className="reveal bg-panel border border-white/9 rounded-2xl p-[30px] mt-9">
           <p className="text-[#DAD4EC] text-[0.98rem] mb-3">
-            BM Academy is a Digital Marketing, Full Stack Development, IT &amp; Skill Training Institute based in Kottakuppam, Vanur, Puducherry, and part of <b className="text-white">ABM Groups</b>. We are rated <b className="text-white">4.9★ on Google</b> from 35+ verified reviews, with 1,400+ students trained and 150+ students placed in jobs.
+            BM Academy is a Digital Marketing, Full Stack Development, IT &amp; Skill Training Institute based in Kottakuppam, Vanur, Puducherry, and part of <b className="text-green-brand">ABM Groups</b>. We are rated <b className="text-green-brand">4.9★ on Google</b> from 35+ verified reviews, with 1,400+ students trained and 150+ students placed in jobs.
           </p>
           <p className="text-[#DAD4EC] text-[0.98rem] mb-0">
             Our approach is hands-on: students learn by running real campaigns, building real websites, and working on live projects — not by sitting through theory-only lectures. We also offer Full Stack Development, Video Editing, Data Analytics, AI, and Government Exam Coaching programs at the same campus.

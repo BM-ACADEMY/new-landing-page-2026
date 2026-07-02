@@ -1,9 +1,16 @@
 import React, { useState } from 'react';
 
 export default function BookDemo({ selectedProgram, isModal = false, onClose }) {
+  const getInitialTrack = (prog) => {
+    if (prog && prog.includes("Tier 1")) {
+      return "Tier 1 · Skill Track";
+    }
+    return "Tier 2 · Placement Track";
+  };
   const [name, setName] = useState('');
   const [phone, setPhone] = useState('');
   const [location, setLocation] = useState('');
+  const [track, setTrack] = useState(getInitialTrack(selectedProgram));
   const [dateTime, setDateTime] = useState('');
   const [note, setNote] = useState('');
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -38,7 +45,7 @@ export default function BookDemo({ selectedProgram, isModal = false, onClose }) 
     const program = selectedProgram || "";
     const formattedDate = new Date(dateTime).toLocaleString();
 
-    const WEBHOOK_URL = "https://script.google.com/macros/s/AKfycbydmzGHeDipHerm2AQClYu5UMv9QIZfGP1QWz4bzXsEgAaY2lPbN-E9uTEbkTXB1EPo/exec";
+    const WEBHOOK_URL = "https://script.google.com/macros/s/AKfycbzwIrxwMMVHbgakiyBze7eTntMyTsTTMUUUPB1WsCf_DZhA43ReaRuad6Ia0xMSStAJ/exec";
     
     if (WEBHOOK_URL) {
       fetch(WEBHOOK_URL, {
@@ -51,6 +58,7 @@ export default function BookDemo({ selectedProgram, isModal = false, onClose }) 
           Name: name.trim(),
           Phone: phone.trim(),
           Location: location.trim(),
+          Track: track,
           DateTime: formattedDate,
           Note: note.trim(),
           Timestamp: new Date().toLocaleString() 
@@ -105,7 +113,7 @@ export default function BookDemo({ selectedProgram, isModal = false, onClose }) 
             <>
               <span className="text-[0.78rem] font-bold tracking-[0.06em] uppercase text-pink-brand">// free · 15 minutes · no pressure</span>
               <h2 className="font-sora font-extrabold text-[1.6rem] leading-[1.14] tracking-[-0.02em] mt-3 mb-0 text-white">
-                Book your free 1:1 demo
+                Book your free demo
               </h2>
               <p className="text-muted-brand text-[0.94rem] mt-3 mb-[22px]">
                 Get full clarity on skills, placement, and EMI options. Submit the form to schedule your session.
@@ -148,6 +156,19 @@ export default function BookDemo({ selectedProgram, isModal = false, onClose }) 
               onChange={(e) => setLocation(e.target.value)}
               disabled={isSubmitting}
             />
+            <div className="flex flex-col gap-1.5">
+              <label htmlFor="track" className="text-xs text-muted-brand px-1">Select Track</label>
+              <select 
+                id="track" 
+                className="w-full p-[13px_14px] border border-white/9 rounded-[11px] bg-bg-dark text-white font-sans focus:outline-none focus:border-pink-brand cursor-pointer"
+                value={track}
+                onChange={(e) => setTrack(e.target.value)}
+                disabled={isSubmitting}
+              >
+                <option value="Tier 1 · Skill Track">Tier 1 · Skill Track</option>
+                <option value="Tier 2 · Placement Track">Tier 2 · Placement Track</option>
+              </select>
+            </div>
             <div className="flex flex-col gap-1.5">
               <label htmlFor="dateTime" className="text-xs text-muted-brand px-1">Preferred Date &amp; Time</label>
               <input 

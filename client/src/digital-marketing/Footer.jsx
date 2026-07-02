@@ -65,7 +65,7 @@ export default function Footer({ onBookClick }) {
               </li>
               <li>
                 <button onClick={onBookClick} className="text-muted-brand hover:text-white transition-colors cursor-pointer bg-transparent border-none p-0 text-left">
-                  Book 1:1 Demo
+                  Book Demo
                 </button>
               </li>
             </ul>

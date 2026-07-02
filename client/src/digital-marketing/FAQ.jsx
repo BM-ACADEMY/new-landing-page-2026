@@ -46,7 +46,7 @@ export default function FAQ() {
               <span className="text-[1.4rem] text-pink-brand transition-transform duration-200 group-open:rotate-45">+</span>
             </summary>
             <p className="text-muted-brand mt-3 text-[0.94rem]">
-              Yes, EMI is available. We'll share the full breakdown during your free 1:1 demo session.
+              Yes, EMI is available. We'll share the full breakdown during your free demo session.
             </p>
           </details>
 

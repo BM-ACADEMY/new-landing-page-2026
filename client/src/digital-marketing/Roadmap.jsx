@@ -30,8 +30,8 @@ export default function Roadmap() {
       
       <div className="max-w-[860px] mx-auto px-5">
         <span className="text-[0.78rem] font-bold tracking-[0.06em] uppercase text-pink-brand block text-center mb-2">// student journey</span>
-        <h2 className="font-sora font-extrabold text-[2.4rem] sm:text-[3.4rem] leading-[1.12] text-center text-white mb-12">
-          Your transformation path
+        <h2 className="font-sora font-extrabold text-[2.4rem] sm:text-[3.4rem] leading-[1.12] text-center text-white mb-12 uppercase">
+          STUDENT JOURNEY
         </h2>
 
         {/* Desktop View */}
@@ -39,9 +39,12 @@ export default function Roadmap() {
           {/* Row 1: Before -> Month 1 -> Month 2 */}
           <div className="flex items-center justify-between gap-4 mb-16 relative">
             {/* Before Card */}
-            <div className="flex-1 bg-transparent border border-white/21 rounded-2xl p-6 text-center min-h-[110px] flex flex-col justify-center shadow-lg transition-transform duration-200 hover:-translate-y-0.5">
-              <div className="text-muted-brand font-bold text-[0.72rem] uppercase tracking-wider mb-1.5">Before</div>
-              <div className="text-white font-sora font-bold text-base leading-snug">No degree, no skill</div>
+            <div className="flex-1 bg-[#f4f1eb] border border-[#d6d2c4] rounded-2xl p-6 min-h-[110px] flex items-center gap-4 shadow-lg transition-transform duration-200 hover:-translate-y-0.5 text-left">
+              <div className="w-8 h-8 rounded-full bg-white border border-[#d6d2c4] text-[#7b776c] font-bold text-sm flex items-center justify-center shrink-0">1</div>
+              <div>
+                <div className="text-[#7b776c] font-bold text-[0.72rem] uppercase tracking-wider mb-0.5">Before</div>
+                <div className="text-[#333333] font-sora font-bold text-base leading-snug">No degree, no skill</div>
+              </div>
             </div>
             
             {/* Horizontal Arrow 1 (with scroll draw animation) */}
@@ -78,9 +81,12 @@ export default function Roadmap() {
             </div>
 
             {/* Month 1 Card */}
-            <div className="flex-1 bg-transparent border border-white/21 rounded-2xl p-6 text-center min-h-[110px] flex flex-col justify-center shadow-lg transition-transform duration-200 hover:-translate-y-0.5">
-              <div className="text-pink-brand font-bold text-[0.72rem] uppercase tracking-wider mb-1.5">Month 1</div>
-              <div className="text-white font-sora font-bold text-base leading-snug">First real skill</div>
+            <div className="flex-1 bg-[#fbf0f2] border border-[#ebd0d6] rounded-2xl p-6 min-h-[110px] flex items-center gap-4 shadow-lg transition-transform duration-200 hover:-translate-y-0.5 text-left">
+              <div className="w-8 h-8 rounded-full bg-white border border-[#ebd0d6] text-[#a04a60] font-bold text-sm flex items-center justify-center shrink-0">2</div>
+              <div>
+                <div className="text-[#a04a60] font-bold text-[0.72rem] uppercase tracking-wider mb-0.5">Month 1</div>
+                <div className="text-[#5c1d2e] font-sora font-bold text-base leading-snug">First real skill</div>
+              </div>
             </div>
 
             {/* Horizontal Arrow 2 (with scroll draw animation) */}
@@ -117,9 +123,12 @@ export default function Roadmap() {
             </div>
 
             {/* Month 2 Card */}
-            <div className="flex-1 bg-transparent border border-white/21 rounded-2xl p-6 text-center min-h-[110px] flex flex-col justify-center shadow-lg transition-transform duration-200 hover:-translate-y-0.5 relative">
-              <div className="text-pink-brand font-bold text-[0.72rem] uppercase tracking-wider mb-1.5">Month 2</div>
-              <div className="text-white font-sora font-bold text-base leading-snug">Runs live ad campaigns</div>
+            <div className="flex-1 bg-[#fbf0f2] border border-[#ebd0d6] rounded-2xl p-6 min-h-[110px] flex items-center gap-4 shadow-lg transition-transform duration-200 hover:-translate-y-0.5 text-left relative">
+              <div className="w-8 h-8 rounded-full bg-white border border-[#ebd0d6] text-[#a04a60] font-bold text-sm flex items-center justify-center shrink-0">3</div>
+              <div>
+                <div className="text-[#a04a60] font-bold text-[0.72rem] uppercase tracking-wider mb-0.5">Month 2</div>
+                <div className="text-[#5c1d2e] font-sora font-bold text-base leading-snug">Runs live ad campaigns</div>
+              </div>
             </div>
           </div>
 
@@ -191,9 +200,12 @@ export default function Roadmap() {
           {/* Row 2: Month 3 -> After -> Lifestyle shift */}
           <div className="flex flex-col items-center gap-6 mt-12 max-w-[600px] mx-auto relative">
             {/* Month 3 Card */}
-            <div className="w-[80%] bg-transparent border border-white/21 rounded-2xl p-6 text-center min-h-[110px] flex flex-col justify-center shadow-lg transition-transform duration-200 hover:-translate-y-0.5">
-              <div className="text-pink-brand font-bold text-[0.72rem] uppercase tracking-wider mb-1.5">Month 3</div>
-              <div className="text-white font-sora font-bold text-base leading-snug">Portfolio &amp; mock interviews</div>
+            <div className="w-[80%] bg-[#fbf0f2] border border-[#ebd0d6] rounded-2xl p-6 min-h-[110px] flex items-center gap-4 shadow-lg transition-transform duration-200 hover:-translate-y-0.5 text-left">
+              <div className="w-8 h-8 rounded-full bg-white border border-[#ebd0d6] text-[#a04a60] font-bold text-sm flex items-center justify-center shrink-0">4</div>
+              <div>
+                <div className="text-[#a04a60] font-bold text-[0.72rem] uppercase tracking-wider mb-0.5">Month 3</div>
+                <div className="text-[#5c1d2e] font-sora font-bold text-base leading-snug">Portfolio &amp; mock interviews</div>
+              </div>
             </div>
 
             {/* Vertical Arrow 1 (with scroll draw animation) */}
@@ -230,9 +242,12 @@ export default function Roadmap() {
             </div>
 
             {/* After Card */}
-            <div className="w-[80%] bg-transparent border border-white/21 rounded-2xl p-6 text-center min-h-[110px] flex flex-col justify-center shadow-lg transition-transform duration-200 hover:-translate-y-0.5">
-              <div className="text-green-brand font-bold text-[0.72rem] uppercase tracking-wider mb-1.5">After</div>
-              <div className="text-white font-sora font-bold text-base leading-snug">Hired, 2-3x salary</div>
+            <div className="w-[80%] bg-[#eff5eb] border border-[#cbe0bf] rounded-2xl p-6 min-h-[110px] flex items-center gap-4 shadow-lg transition-transform duration-200 hover:-translate-y-0.5 text-left">
+              <div className="w-8 h-8 rounded-full bg-white border border-[#cbe0bf] text-[#456f35] font-bold text-sm flex items-center justify-center shrink-0">5</div>
+              <div>
+                <div className="text-[#456f35] font-bold text-[0.72rem] uppercase tracking-wider mb-0.5">After</div>
+                <div className="text-[#2d5020] font-sora font-bold text-base leading-snug">Hired, 2-3x salary</div>
+              </div>
             </div>
 
             {/* Vertical Arrow 2 (with scroll draw animation) */}
@@ -269,9 +284,12 @@ export default function Roadmap() {
             </div>
 
             {/* Lifestyle Shift Card */}
-            <div className="w-[80%] bg-transparent border border-white/21 rounded-2xl p-6 text-center min-h-[110px] flex flex-col justify-center shadow-lg transition-transform duration-200 hover:-translate-y-0.5">
-              <div className="text-green-brand font-bold text-[0.72rem] uppercase tracking-wider mb-1.5">Lifestyle shift</div>
-              <div className="text-white font-sora font-bold text-base leading-snug">Stable income, flexibility</div>
+            <div className="w-[80%] bg-[#eff5eb] border border-[#cbe0bf] rounded-2xl p-6 min-h-[110px] flex items-center gap-4 shadow-lg transition-transform duration-200 hover:-translate-y-0.5 text-left">
+              <div className="w-8 h-8 rounded-full bg-white border border-[#cbe0bf] text-[#456f35] font-bold text-sm flex items-center justify-center shrink-0">6</div>
+              <div>
+                <div className="text-[#456f35] font-bold text-[0.72rem] uppercase tracking-wider mb-0.5">Lifestyle shift</div>
+                <div className="text-[#2d5020] font-sora font-bold text-base leading-snug">Stable income, flexibility</div>
+              </div>
             </div>
           </div>
         </div>
@@ -279,9 +297,12 @@ export default function Roadmap() {
         {/* Mobile View */}
         <div className="block md:hidden space-y-5">
           {/* 1. Before */}
-          <div className="bg-transparent border border-white/21 rounded-2xl p-5 text-center shadow-md">
-            <div className="text-muted-brand font-bold text-[0.7rem] uppercase tracking-wider mb-1">Before</div>
-            <div className="text-white font-sora font-bold text-base">No degree, no skill</div>
+          <div className="bg-[#f4f1eb] border border-[#d6d2c4] rounded-2xl p-5 shadow-md flex items-center gap-4 text-left">
+            <div className="w-8 h-8 rounded-full bg-white border border-[#d6d2c4] text-[#7b776c] font-bold text-sm flex items-center justify-center shrink-0">1</div>
+            <div>
+              <div className="text-[#7b776c] font-bold text-[0.7rem] uppercase tracking-wider mb-0.5">Before</div>
+              <div className="text-[#333333] font-sora font-bold text-base">No degree, no skill</div>
+            </div>
           </div>
 
           {/* Mobile Arrow 1 */}
@@ -320,9 +341,12 @@ export default function Roadmap() {
           </div>
 
           {/* 2. Month 1 */}
-          <div className="bg-transparent border border-white/21 rounded-2xl p-5 text-center shadow-md">
-            <div className="text-pink-brand font-bold text-[0.7rem] uppercase tracking-wider mb-1">Month 1</div>
-            <div className="text-white font-sora font-bold text-base">First real skill</div>
+          <div className="bg-[#fbf0f2] border border-[#ebd0d6] rounded-2xl p-5 shadow-md flex items-center gap-4 text-left">
+            <div className="w-8 h-8 rounded-full bg-white border border-[#ebd0d6] text-[#a04a60] font-bold text-sm flex items-center justify-center shrink-0">2</div>
+            <div>
+              <div className="text-[#a04a60] font-bold text-[0.7rem] uppercase tracking-wider mb-0.5">Month 1</div>
+              <div className="text-[#5c1d2e] font-sora font-bold text-base">First real skill</div>
+            </div>
           </div>
 
           {/* Mobile Arrow 2 */}
@@ -361,9 +385,12 @@ export default function Roadmap() {
           </div>
 
           {/* 3. Month 2 */}
-          <div className="bg-transparent border border-white/21 rounded-2xl p-5 text-center shadow-md">
-            <div className="text-pink-brand font-bold text-[0.7rem] uppercase tracking-wider mb-1">Month 2</div>
-            <div className="text-white font-sora font-bold text-base">Runs live ad campaigns</div>
+          <div className="bg-[#fbf0f2] border border-[#ebd0d6] rounded-2xl p-5 shadow-md flex items-center gap-4 text-left">
+            <div className="w-8 h-8 rounded-full bg-white border border-[#ebd0d6] text-[#a04a60] font-bold text-sm flex items-center justify-center shrink-0">3</div>
+            <div>
+              <div className="text-[#a04a60] font-bold text-[0.7rem] uppercase tracking-wider mb-0.5">Month 2</div>
+              <div className="text-[#5c1d2e] font-sora font-bold text-base">Runs live ad campaigns</div>
+            </div>
           </div>
 
           {/* Mobile Arrow 3 */}
@@ -402,9 +429,12 @@ export default function Roadmap() {
           </div>
 
           {/* 4. Month 3 */}
-          <div className="bg-transparent border border-white/21 rounded-2xl p-5 text-center shadow-md">
-            <div className="text-pink-brand font-bold text-[0.7rem] uppercase tracking-wider mb-1">Month 3</div>
-            <div className="text-white font-sora font-bold text-base">Portfolio &amp; mock interviews</div>
+          <div className="bg-[#fbf0f2] border border-[#ebd0d6] rounded-2xl p-5 shadow-md flex items-center gap-4 text-left">
+            <div className="w-8 h-8 rounded-full bg-white border border-[#ebd0d6] text-[#a04a60] font-bold text-sm flex items-center justify-center shrink-0">4</div>
+            <div>
+              <div className="text-[#a04a60] font-bold text-[0.7rem] uppercase tracking-wider mb-0.5">Month 3</div>
+              <div className="text-[#5c1d2e] font-sora font-bold text-base">Portfolio &amp; mock interviews</div>
+            </div>
           </div>
 
           {/* Mobile Arrow 4 */}
@@ -443,9 +473,12 @@ export default function Roadmap() {
           </div>
 
           {/* 5. After */}
-          <div className="bg-transparent border border-white/21 rounded-2xl p-5 text-center shadow-md">
-            <div className="text-green-brand font-bold text-[0.7rem] uppercase tracking-wider mb-1">After</div>
-            <div className="text-white font-sora font-bold text-base">Hired, 2-3x salary</div>
+          <div className="bg-[#eff5eb] border border-[#cbe0bf] rounded-2xl p-5 shadow-md flex items-center gap-4 text-left">
+            <div className="w-8 h-8 rounded-full bg-white border border-[#cbe0bf] text-[#456f35] font-bold text-sm flex items-center justify-center shrink-0">5</div>
+            <div>
+              <div className="text-[#456f35] font-bold text-[0.7rem] uppercase tracking-wider mb-0.5">After</div>
+              <div className="text-[#2d5020] font-sora font-bold text-base">Hired, 2-3x salary</div>
+            </div>
           </div>
 
           {/* Mobile Arrow 5 */}
@@ -484,9 +517,12 @@ export default function Roadmap() {
           </div>
 
           {/* 6. Lifestyle shift */}
-          <div className="bg-transparent border border-white/21 rounded-2xl p-5 text-center shadow-md">
-            <div className="text-green-brand font-bold text-[0.7rem] uppercase tracking-wider mb-1">Lifestyle shift</div>
-            <div className="text-white font-sora font-bold text-base">Stable income, flexibility</div>
+          <div className="bg-[#eff5eb] border border-[#cbe0bf] rounded-2xl p-5 shadow-md flex items-center gap-4 text-left">
+            <div className="w-8 h-8 rounded-full bg-white border border-[#cbe0bf] text-[#456f35] font-bold text-sm flex items-center justify-center shrink-0">6</div>
+            <div>
+              <div className="text-[#456f35] font-bold text-[0.7rem] uppercase tracking-wider mb-0.5">Lifestyle shift</div>
+              <div className="text-[#2d5020] font-sora font-bold text-base">Stable income, flexibility</div>
+            </div>
           </div>
         </div>
       </div>

@@ -11,7 +11,7 @@ import Guarantee from './Guarantee';
 import Tracks from './Tracks';
 import Certificate from './Certificate';
 import SampleCertificate from './SampleCertificate';
-import LiveStatus from './LiveStatus';
+// import LiveStatus from './LiveStatus';
 // import Transformation from './Transformation';
 import Testimonials from './Testimonials';
 import FAQ from './FAQ';
@@ -69,17 +69,16 @@ export default function DigitalMarketing() {
       <Fears />
       <Skills />
       <About />
-      <Roadmap />
       <WebinarSection onBookClick={handleOpenWebinarModal} />
+      <Roadmap />
       <SampleCertificate />
       <Tracks onSelectProgram={handleSelectProgram} />
       <Certificate />
       <Guarantee />
-      <LiveStatus />
+      {/* <LiveStatus /> */}
       {/* <Transformation /> */}
       <Testimonials />
       <FAQ />
-      <BookDemo selectedProgram={selectedProgram} />
       <FinalCTA onBookClick={handleOpenModal} />
       <Footer onBookClick={handleOpenModal} />
       <MobileCTA onBookClick={handleOpenWebinarModal} />

@@ -79,6 +79,7 @@ export default function DigitalMarketing() {
       {/* <Transformation /> */}
       <Testimonials />
       <FAQ />
+      <BookDemo selectedProgram={selectedProgram} />
       <FinalCTA onBookClick={handleOpenModal} />
       <Footer onBookClick={handleOpenModal} />
       <MobileCTA onBookClick={handleOpenWebinarModal} />

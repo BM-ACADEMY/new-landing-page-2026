@@ -26,6 +26,17 @@ export default function AiTools() {
 
   // Reveal Animation on Scroll
   useEffect(() => {
+    // Meta Pixel and Google Analytics PageView Tracking
+    if (window.fbq) {
+      window.fbq('track', 'PageView');
+    }
+    if (window.gtag) {
+      window.gtag('config', 'G-102MXGE3GQ', {
+        page_path: window.location.pathname,
+        page_title: 'AI Tools Mastery Landing Page'
+      });
+    }
+
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {

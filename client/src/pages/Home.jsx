@@ -72,8 +72,8 @@ const Home = () => {
             style={{ backgroundColor: '#101010', minHeight: '400px' }}
           >
             {/* Image area */}
-            <div className="w-full h-48 relative overflow-hidden bg-[#101010] border-b border-white/20">
-               <div className="w-full h-full bg-gradient-to-r from-[#FF3D81] via-[#7C5CFC] to-[#3DA5FF] opacity-80 flex items-center justify-center font-bold text-white text-lg">AI TOOLS MASTERY</div>
+           <div className="w-full h-48 relative overflow-hidden bg-[#101010] border-b border-white/20">
+               <img src="/Home/ai.png" alt="Digital Marketing" className="w-full h-full object-cover" />
             </div>
             
             <div className="p-6 flex flex-col flex-grow relative">

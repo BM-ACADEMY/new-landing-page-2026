@@ -8,7 +8,7 @@ export default function WebinarSection({ onBookClick }) {
 
       <div className="max-w-[800px] mx-auto px-5 text-center relative z-10">
         <span className="text-[0.78rem] font-bold tracking-[0.06em] uppercase text-[#f7367a]">// free training</span>
-        <h2 className="font-sora font-extrabold text-[1.8rem] sm:text-[2.6rem] leading-[1.14] tracking-[-0.025em] mt-3 mb-4 text-white">
+        <h2 className="font-sora font-extrabold text-[1.35rem] sm:text-[1.8rem] leading-[1.14] tracking-[-0.025em] mt-3 mb-4 text-white">
           From Zero Experience to Job-Ready – Completely Free. Join industry experts live and learn exactly what it takes to build a career in Digital Marketing.
         </h2>
         <p className="text-muted-brand text-[0.96rem] sm:text-[1.05rem] leading-relaxed max-w-[700px] mx-auto mb-10">

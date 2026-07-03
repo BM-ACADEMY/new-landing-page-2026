@@ -9,8 +9,8 @@ export default function Footer({ onBookClick }) {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-[1.5fr_1fr_1.2fr_1.5fr] gap-8 mb-8">
           {/* Column 1: Logo, description, socials */}
           <div>
-            <a href="#" className="inline-block mb-4">
-              <img src="/logo/logo.webp" alt="BM Academy Logo" className="h-10 w-auto object-contain" />
+            <a href="#" className="inline-block mb-4 p-2 bg-[#f9f9fb] rounded-xl shadow-md border border-white/10">
+              <img src="/logo/logo.webp" alt="BM Academy Logo" className="h-8 w-auto object-contain block" />
             </a>
             <p className="text-muted-brand text-[0.88rem] leading-relaxed mb-6">
               BM Academy is a multi-vertical training institute empowering students through Digital Marketing, AI tools, Software Development, and Skill Training — built on integrity, innovation, and real-world skills.

@@ -65,7 +65,7 @@ export default function DigitalMarketing() {
     <div className="min-h-screen bg-bg-dark text-text-brand pb-[74px] sm:pb-0 relative font-inter">
       <Header onBookClick={handleOpenWebinarModal} />
       <Trustbar />
-      <Hero onBookClick={handleOpenModal} />
+      <Hero onBookClick={handleOpenWebinarModal} />
       <Fears />
       <Skills />
       <About />
@@ -80,7 +80,7 @@ export default function DigitalMarketing() {
       <Testimonials />
       <FAQ />
       <BookDemo selectedProgram={selectedProgram} />
-      <FinalCTA onBookClick={handleOpenModal} />
+      <FinalCTA onBookClick={handleOpenWebinarModal} />
       <Footer onBookClick={handleOpenModal} />
       <MobileCTA onBookClick={handleOpenWebinarModal} />
       <FloatingWhatsApp />

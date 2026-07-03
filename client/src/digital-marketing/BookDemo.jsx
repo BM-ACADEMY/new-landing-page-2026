@@ -121,11 +121,7 @@ export default function BookDemo({ selectedProgram, isModal = false, onClose }) 
             </>
           )}
           
-          {selectedProgram && (
-            <div className="mb-4 p-3 bg-panel-2 border border-white/9 rounded-[11px] text-sm text-white">
-              Selected Track: <strong className="text-pink-brand">{selectedProgram}</strong>
-            </div>
-          )}
+          
 
           <div className="grid gap-[13px]">
             <input 
@@ -198,7 +194,7 @@ export default function BookDemo({ selectedProgram, isModal = false, onClose }) 
               onClick={handleBook}
               disabled={isSubmitting}
             >
-              {isSubmitting ? "Scheduling..." : "Book Free Demo"}
+              {isSubmitting ? "Scheduling..." : "Book"}
             </button>
           </div>
           

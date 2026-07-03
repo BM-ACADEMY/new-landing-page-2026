@@ -9,10 +9,10 @@ export default function WebinarSection({ onBookClick }) {
       <div className="max-w-[800px] mx-auto px-5 text-center relative z-10">
         <span className="text-[0.78rem] font-bold tracking-[0.06em] uppercase text-[#f7367a]">// FREE Live Webinar </span>
         <h2 className="font-sora font-extrabold text-[1.35rem] sm:text-[1.8rem] leading-[1.14] tracking-[-0.025em] mt-3 mb-4 text-white">
-          From Zero Experience to Job-Ready – Completely Free. Join industry experts live and learn exactly what it takes to build a career in Digital Marketing.
+          AI is Changing Every Career. Are You Ready?
         </h2>
         <p className="text-muted-brand text-[0.96rem] sm:text-[1.05rem] leading-relaxed max-w-[700px] mx-auto mb-10">
-          Join our FREE Live Webinar on July 11, 5:00 PM – 6:00 PM, and discover the real, practical roadmap to land your first Digital Marketing job. No fluff, no sales pitch — just actionable steps you can start using immediately. Every attendee also receives a Hard Copy Certificate to mark the beginning of their journey.
+          Join our FREE Live AI Webinar to discover how AI tools can boost your productivity, enhance your skills, and open new career opportunities—no coding or technical background required.
         </p>
 
         {/* Mac OS Terminal Style Window Container */}
@@ -38,30 +38,11 @@ export default function WebinarSection({ onBookClick }) {
               </svg>
               Upcoming Webinar
             </div>
-            <div className="w-12"></div> {/* Spacer to keep title centered */}
+            <div className="w-12"></div>
           </div>
 
           <div className="p-5 sm:p-7 space-y-5">
-            
-            {/* Batch 1: Completed */}
-            {/* <div className="flex items-center justify-between p-4 rounded-xl border border-white/5 bg-white/[0.01] opacity-50 select-none">
-              <div className="flex items-center gap-4">
-                <div className="w-10 h-10 rounded-lg bg-white/5 border border-white/5 flex items-center justify-center text-muted-brand">
-                  <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
-                  </svg>
-                </div>
-                <div>
-                  <div className="font-sora font-bold text-white text-[1rem]">June 27, 2026</div>
-                  <div className="text-xs text-muted-brand mt-0.5">Saturday · 5:00 PM – 6:00 PM</div>
-                </div>
-              </div>
-              <span className="text-xs font-bold text-green-brand/70 border border-green-brand/20 bg-green-brand/5 px-3 py-1 rounded-full uppercase tracking-wider">
-                Completed
-              </span>
-            </div> */}
-
-            {/* Batch 2: Active / Upcoming */}
+            {/* Date display */}
             <div className="flex items-center justify-between p-4 rounded-xl border border-[#FFB020]/20 bg-[#FFB020]/[0.02] shadow-[0_0_20px_rgba(255,176,32,0.03)] relative overflow-hidden group">
               <div className="absolute inset-y-0 left-0 w-[4px] bg-[#FFB020]"></div>
               <div className="flex items-center gap-4">
@@ -71,7 +52,7 @@ export default function WebinarSection({ onBookClick }) {
                   </svg>
                 </div>
                 <div>
-                  <div className="font-sora font-extrabold text-white text-[1.05rem]">July 11, 2026</div>
+                  <div className="font-sora font-extrabold text-white text-[1.05rem]">July 18, 2026</div>
                   <div className="text-xs text-[#FFB020] font-semibold mt-0.5">Saturday · 5:00 PM – 6:00 PM</div>
                 </div>
               </div>
@@ -80,10 +61,8 @@ export default function WebinarSection({ onBookClick }) {
               </span>
             </div>
 
-            {/* Sub-grid: Mode and Fee */}
+            {/* Mode & Fee info cards */}
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
-              
-              {/* Mode Card */}
               <div className="bg-panel-2 border border-white/5 rounded-xl p-4 flex flex-col items-center text-center">
                 <div className="w-9 h-9 rounded-full bg-white/5 flex items-center justify-center text-[#FFB020] mb-2.5">
                   <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
@@ -95,18 +74,16 @@ export default function WebinarSection({ onBookClick }) {
                 <span className="text-[0.7rem] text-muted-brand mt-0.5">(Zoom / Google Meet)</span>
               </div>
 
-              {/* Fee Card */}
               <div className="bg-panel-2 border border-white/5 rounded-xl p-4 flex flex-col items-center text-center">
                 <div className="w-9 h-9 rounded-full bg-white/5 flex items-center justify-center text-[#FFB020] mb-2.5">
                   <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M12 16v1M10 21h4a2 2 0 002-2v-3a2 2 0 00-2-2h-3a2 2 0 00-2 2v3a2 2 0 002 2z" />
                   </svg>
                 </div>
-                <span className="text-xs text-muted-brand uppercase tracking-wider">Fee</span>
-                <span className="font-sora font-bold text-white text-sm mt-1">100% FREE</span>
-                <span className="text-[0.7rem] text-green-brand font-semibold mt-0.5">No Credit Card Required</span>
+                <span className="text-xs text-muted-brand uppercase tracking-wider">Webinar Fee</span>
+                <span className="font-sora font-bold text-green-brand text-sm mt-1">100% Free</span>
+                <span className="text-[0.7rem] text-muted-brand mt-0.5">(Register today)</span>
               </div>
-
             </div>
 
             {/* Bonus Banner bar */}
@@ -129,7 +106,6 @@ export default function WebinarSection({ onBookClick }) {
             Register for the Free Webinar →
           </button>
         </div>
-
       </div>
     </section>
   );

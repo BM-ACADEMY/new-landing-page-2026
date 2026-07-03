@@ -2,44 +2,29 @@ import React, { useState, useEffect } from 'react';
 import Header from './Header';
 import Trustbar from './Trustbar';
 import Hero from './Hero';
-import WebinarSection from './WebinarSection';
 import Fears from './Fears';
 import Skills from './Skills';
 import About from './About';
-import Roadmap from './Roadmap';
+import WebinarSection from './WebinarSection';
 import Guarantee from './Guarantee';
 import Tracks from './Tracks';
-import Certificate from './Certificate';
+import Roadmap from './Roadmap';
 import SampleCertificate from './SampleCertificate';
-// import LiveStatus from './LiveStatus';
-// import Transformation from './Transformation';
+import Certificate from '../digital-marketing/Certificate';
 import Testimonials from './Testimonials';
 import FAQ from './FAQ';
-import BookDemo from './BookDemo';
-import WebinarForm from './WebinarForm';
 import FinalCTA from './FinalCTA';
 import Footer from './Footer';
 import MobileCTA from './MobileCTA';
-import FloatingWhatsApp from './FloatingWhatsApp';
+import WebinarForm from './WebinarForm';
+import BookDemo from './BookDemo';
+import FloatingWhatsApp from '../digital-marketing/FloatingWhatsApp';
 
-export default function DigitalMarketing() {
-  const [selectedProgram, setSelectedProgram] = useState('');
+export default function AiTools() {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [isWebinarModalOpen, setIsWebinarModalOpen] = useState(false);
 
-  const handleSelectProgram = (program) => {
-    setSelectedProgram(program);
-    setIsModalOpen(true);
-  };
-
-  const handleOpenModal = () => {
-    setIsModalOpen(true);
-  };
-
-  const handleOpenWebinarModal = () => {
-    setIsWebinarModalOpen(true);
-  };
-
+  // Reveal Animation on Scroll
   useEffect(() => {
     const observer = new IntersectionObserver(
       (entries) => {
@@ -50,7 +35,7 @@ export default function DigitalMarketing() {
           }
         });
       },
-      { threshold: 0.14 }
+      { threshold: 0.1 }
     );
 
     const elements = document.querySelectorAll('.reveal');
@@ -61,51 +46,56 @@ export default function DigitalMarketing() {
     };
   }, []);
 
+  const openModal = () => setIsModalOpen(true);
+  const closeModal = () => setIsModalOpen(false);
+  const openWebinarModal = () => setIsWebinarModalOpen(true);
+  const closeWebinarModal = () => setIsWebinarModalOpen(false);
+
   return (
     <div className="min-h-screen bg-bg-dark text-text-brand pb-[74px] sm:pb-0 relative font-inter">
-      <Header onBookClick={handleOpenWebinarModal} />
+      <Header onBookClick={openWebinarModal} />
       <Trustbar />
-      <Hero onBookClick={handleOpenWebinarModal} />
+      <Hero onBookClick={openWebinarModal} />
       <Fears />
       <Skills />
       <About />
-      <WebinarSection onBookClick={handleOpenWebinarModal} />
+      
+      <WebinarSection onBookClick={openWebinarModal} />
       <Roadmap />
       <SampleCertificate />
-      <Tracks onSelectProgram={handleSelectProgram} />
+      <Tracks onBookClick={openModal} />
       <Guarantee />
       <Certificate />
-      {/* <LiveStatus /> */}
-      {/* <Transformation /> */}
       <Testimonials />
       <FAQ />
-      <BookDemo selectedProgram={selectedProgram} />
-      <FinalCTA onBookClick={handleOpenWebinarModal} />
-      <Footer onBookClick={handleOpenModal} />
-      <MobileCTA onBookClick={handleOpenWebinarModal} />
-      <FloatingWhatsApp />
+      <WebinarForm isModal={false} />
+      <FinalCTA onBookClick={openWebinarModal} />
+      <Footer onBookClick={openWebinarModal} />
+      <MobileCTA onBookClick={openWebinarModal} />
 
-      {/* Booking Modal Overlay */}
+      {/* 1:1 Demo Modal dialog */}
       {isModalOpen && (
         <div className="fixed inset-0 z-50 bg-black/80 backdrop-blur-sm flex items-center justify-center p-4">
           <div className="relative w-full max-w-[560px] select-none">
             <div className="max-h-[90vh] overflow-y-auto rounded-2xl bg-panel border border-white/20">
-              <BookDemo selectedProgram={selectedProgram} isModal={true} onClose={() => setIsModalOpen(false)} />
+              <BookDemo isModal={true} onClose={closeModal} />
             </div>
           </div>
         </div>
       )}
 
-      {/* Webinar Modal Overlay */}
+      {/* Webinar Modal dialog */}
       {isWebinarModalOpen && (
         <div className="fixed inset-0 z-50 bg-black/80 backdrop-blur-sm flex items-center justify-center p-4">
           <div className="relative w-full max-w-[560px] select-none">
             <div className="max-h-[90vh] overflow-y-auto rounded-2xl bg-panel border border-white/20">
-              <WebinarForm isModal={true} onClose={() => setIsWebinarModalOpen(false)} />
+              <WebinarForm isModal={true} onClose={closeWebinarModal} />
             </div>
           </div>
         </div>
       )}
+
+      <FloatingWhatsApp />
     </div>
   );
 }

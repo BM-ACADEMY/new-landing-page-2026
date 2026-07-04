@@ -49,7 +49,11 @@ export default function ContentCreator() {
 
   useEffect(() => {
     // Set document meta
-    document.title = "Digital Content Creator Course in Pondicherry | Reels to Income — BM Academy";
+    document.title = "Free Content Creator Webinar | Learn Content Creation in Pondicherry";
+    const metaDescription = document.querySelector('meta[name="description"]');
+    if (metaDescription) {
+      metaDescription.setAttribute('content', 'Join our FREE Content Creator Webinar in Pondicherry and learn content creation, video editing, branding, and social media growth. Register today!');
+    }
     
     // Meta Pixel and Google Analytics PageView Tracking
     if (window.fbq) {

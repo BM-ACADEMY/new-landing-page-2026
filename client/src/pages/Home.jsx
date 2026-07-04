@@ -73,13 +73,43 @@ const Home = () => {
           >
             {/* Image area */}
            <div className="w-full h-48 relative overflow-hidden bg-[#101010] border-b border-white/20">
-               <img src="/Home/ai.png" alt="Digital Marketing" className="w-full h-full object-cover" />
+               <img src="/Home/ai.png" alt="AI Tools Mastery" className="w-full h-full object-cover" />
             </div>
             
             <div className="p-6 flex flex-col flex-grow relative">
               <h2 className="text-xl font-bold text-white mb-3" style={{ fontFamily: 'var(--font-inter)' }}>AI TOOLS MASTERY</h2>
               <p className="text-gray-400 text-xs leading-relaxed mb-6">
                 Master ChatGPT, Gemini, Claude & automation tools in 4 weeks. Work 10x faster in any career. Free 1:1 demo session.
+              </p>
+              
+              <div className="mt-auto flex items-center justify-between">
+                <span className="text-[10px] text-gray-500 uppercase tracking-wider font-semibold">LEARN_MORE</span>
+              </div>
+              
+              {/* Bottom right dark button */}
+              <div className="absolute bottom-4 right-4 w-6 h-6 flex items-center justify-center" style={{ backgroundColor: '#1A212D' }}>
+                <svg className="w-3 h-3 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" d="M9 5l7 7-7 7"></path>
+                </svg>
+              </div>
+            </div>
+          </div>
+
+          {/* Card 3 - Digital Content Creator */}
+          <div 
+            onClick={() => navigate('/content-creator')}
+            className="group cursor-pointer rounded overflow-hidden flex flex-col transition-transform hover:-translate-y-1 w-full max-w-[320px]"
+            style={{ backgroundColor: '#101010', minHeight: '400px' }}
+          >
+            {/* Image area */}
+           <div className="w-full h-48 relative overflow-hidden bg-[#101010] border-b border-white/20">
+               <img src="/Home/content-creator.png" alt="Digital Content Creator" className="w-full h-full object-cover" />
+            </div>
+            
+            <div className="p-6 flex flex-col flex-grow relative">
+              <h2 className="text-xl font-bold text-white mb-3" style={{ fontFamily: 'var(--font-inter)' }}>CONTENT CREATOR</h2>
+              <p className="text-gray-400 text-xs leading-relaxed mb-6">
+                Turn content creation into real income in 6 weeks. Learn hooks, editing & brand content systematically. Free 1:1 demo.
               </p>
               
               <div className="mt-auto flex items-center justify-between">

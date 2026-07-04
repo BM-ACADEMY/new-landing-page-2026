@@ -2,6 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import DigitalMarketing from './digital-marketing/DigitalMarketing';
 import AiTools from './ai-tools/AiTools';
+import ContentCreator from './content-creator/ContentCreator';
 import Home from './pages/Home';
 
 function App() {
@@ -12,6 +13,7 @@ function App() {
         <Route path="/digital-marketing" element={<DigitalMarketing />} />
         <Route path="/ai-tools" element={<AiTools />} />
         <Route path="/ai-tools-mastery" element={<AiTools />} />
+        <Route path="/content-creator" element={<ContentCreator />} />
       </Routes>
     </Router>
   );

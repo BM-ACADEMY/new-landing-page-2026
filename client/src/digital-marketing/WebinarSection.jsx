@@ -11,12 +11,9 @@ export default function WebinarSection({ onBookClick }) {
         <h2 className="font-sora font-extrabold text-[1.35rem] sm:text-[1.8rem] leading-[1.14] tracking-[-0.025em] mt-3 mb-4 text-white">
           From Zero Experience to Job-Ready – Completely Free. Join industry experts live and learn exactly what it takes to build a career in Digital Marketing.
         </h2>
-        <p className="text-muted-brand text-[0.96rem] sm:text-[1.05rem] leading-relaxed max-w-[700px] mx-auto mb-10">
-          Join our FREE Live Webinar on July 11, 5:00 PM – 6:00 PM, and discover the real, practical roadmap to land your first Digital Marketing job. No fluff, no sales pitch — just actionable steps you can start using immediately. Every attendee also receives a Hard Copy Certificate to mark the beginning of their journey.
-        </p>
 
         {/* Mac OS Terminal Style Window Container */}
-        <div className="reveal bg-panel border border-white/9 rounded-[20px] shadow-[0_30px_70px_-30px_rgba(0,0,0,0.8)] text-left relative overflow-hidden">
+        <div className="mt-6 reveal bg-panel border border-white/9 rounded-[20px] shadow-[0_30px_70px_-30px_rgba(0,0,0,0.8)] text-left relative overflow-hidden">
           
           {/* Gold 100% FREE Ribbon */}
           <div className="absolute top-0 right-0 overflow-hidden w-28 h-28 pointer-events-none z-20">

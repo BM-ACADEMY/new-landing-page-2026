@@ -32,6 +32,8 @@ export default function Certificate() {
     { src: "/DM/cert/cert5.webp", alt: "Student Certificate 5" },
     { src: "/DM/cert/cert6.webp", alt: "Student Certificate 6" },
     { src: "/DM/cert/cert7.webp", alt: "Student Certificate 7" },
+    { src: "/DM/cert/cert8.webp", alt: "Student Certificate 8" },
+    { src: "/DM/cert/cert9.webp", alt: "Student Certificate 9" },
   ];
 
   const classImages = [
@@ -40,6 +42,7 @@ export default function Certificate() {
     { src: "/DM/class/class3.webp", alt: "Classroom Session 3" },
     { src: "/DM/class/class4.webp", alt: "Classroom Session 5" },
     { src: "/DM/class/class5.webp", alt: "Classroom Session 4" },
+    { src: "/DM/class/class6.webp", alt: "Classroom Session 6" },
   ];
 
   return (
@@ -58,9 +61,9 @@ export default function Certificate() {
             See how our students learn through live classroom sessions, hands-on projects, and practical training at BM Academy.
           </p>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 w-full mt-8">
+          <div className="flex flex-wrap justify-center gap-6 w-full mt-8">
             {classImages.map((img, idx) => (
-              <div key={idx} className="reveal overflow-hidden rounded-2xl border border-white/10 aspect-[4/3] bg-panel-2">
+              <div key={idx} className="reveal overflow-hidden rounded-2xl border border-white/10 aspect-[4/3] bg-panel-2 class-grid-item">
                 <img
                   src={img.src}
                   alt={img.alt}
@@ -83,9 +86,9 @@ export default function Certificate() {
             Our students earn recognized certifications that open doors to premium digital marketing roles worldwide.
           </p>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 w-full mt-8">
+          <div className="flex flex-wrap justify-center gap-6 w-full mt-8">
             {certificates.map((cert, idx) => (
-              <div key={idx} className="reveal overflow-hidden rounded-2xl border border-white/10 aspect-[4/3] bg-panel-2 flex items-center justify-center">
+              <div key={idx} className="reveal overflow-hidden rounded-2xl border border-white/10 aspect-[4/3] bg-panel-2 flex items-center justify-center cert-grid-item">
                 <img
                   src={cert.src}
                   alt={cert.alt}

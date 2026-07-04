@@ -100,8 +100,8 @@ export default function Roadmap() {
       
       <div className="max-w-[860px] mx-auto px-5" ref={containerRef}>
         <span className="text-[0.78rem] font-bold tracking-[0.06em] uppercase text-pink-brand block text-center mb-2">// student journey</span>
-        <h2 className="font-sora font-extrabold text-[2rem] sm:text-[2.6rem] leading-[1.12] text-center text-white mb-16 uppercase">
-          STUDENT JOURNEY
+       <h2 className="font-sora font-extrabold text-[2rem] sm:text-[2.6rem] leading-[1.12] text-center text-white mb-16 capitalize">
+          student journey
         </h2>
 
         {/* Timeline Container */}

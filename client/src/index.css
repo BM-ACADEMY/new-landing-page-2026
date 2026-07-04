@@ -53,3 +53,31 @@
   background-clip: text;
   color: transparent;
 }
+
+.cert-grid-item {
+  width: 100%;
+}
+@media (min-width: 640px) {
+  .cert-grid-item {
+    width: calc(50% - 12px);
+  }
+}
+@media (min-width: 768px) {
+  .cert-grid-item {
+    width: calc(33.333% - 16px);
+  }
+}
+
+.class-grid-item {
+  width: 100%;
+}
+@media (min-width: 640px) {
+  .class-grid-item {
+    width: calc(50% - 12px);
+  }
+}
+@media (min-width: 768px) {
+  .class-grid-item {
+    width: calc(33.333% - 16px);
+  }
+}

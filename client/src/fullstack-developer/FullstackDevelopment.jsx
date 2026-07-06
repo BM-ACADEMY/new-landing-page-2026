@@ -31,7 +31,7 @@ export default function FullstackDevelopment() {
     document.title = "Full Stack Developer Course in Pondicherry | Arts Degree OK — BM Academy";
     const metaDescription = document.querySelector('meta[name="description"]');
     if (metaDescription) {
-      metaDescription.setAttribute('content', 'Become a job-ready Full Stack Developer in Pondicherry — no coding background required. Build real web apps with HTML, CSS, JS, React & Node. Placement support + 20% refund guarantee. Free 1:1 demo at BM Academy, Kottakuppam.');
+      metaDescription.setAttribute('content', "Attend BM Academy's Free Full Stack Development Webinar in Pondicherry to learn frontend and backend development, build real-world projects, and start your career as a Full Stack Developer.");
     }
 
     // Meta Pixel and Google Analytics PageView Tracking

@@ -10,7 +10,6 @@ import Guarantee from './Guarantee';
 import Tracks from './Tracks';
 import SampleCertificate from './SampleCertificate';
 import Certificate from './Certificate';
-import LiveStatus from './LiveStatus';
 import Transformation from './Transformation';
 import Testimonials from './Testimonials';
 import FAQ from './FAQ';
@@ -80,7 +79,6 @@ export default function DataAnalytics() {
       <Tracks onBookClick={openModal} />
       <Guarantee />
       <Certificate />
-      <LiveStatus />
       <Testimonials />
       <FAQ />
       <BookDemo isModal={false} />

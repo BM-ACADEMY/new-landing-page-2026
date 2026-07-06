@@ -64,7 +64,7 @@ export default function Hero({ onBookClick }) {
             Random reels won't pay. <span className="gradtext">Build a content system</span> that earns, in 6 weeks.
           </h1>
           <p className="text-[#C8C2DC] text-[1rem] sm:text-[1.1rem] mt-[18px] mb-[28px] max-w-[540px]">
-            Learn <b className="text-white">Hooks, Scripting, Shooting, Editing, and Growth</b> as a system — not random posting. Work on real brand and client content. No mass webinar — only a free, personal 1:1 demo session.
+            Attend our <b className="text-white">FREE Content Creator Webinar</b> and learn <b className="text-white">Content Planning, Hook Writing, Video Production, Editing, AI-Powered Workflows, and Social Media Growth</b> from industry experts.
           </p>
           <div className="flex flex-wrap gap-[13px]">
             <button 

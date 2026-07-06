@@ -41,6 +41,13 @@ export default function DigitalMarketing() {
   };
 
   useEffect(() => {
+    // Set document meta
+    document.title = "Free Digital Marketing Webinar 2026 | Job Roadmap & Certificate";
+    const metaDescription = document.querySelector('meta[name="description"]');
+    if (metaDescription) {
+      metaDescription.setAttribute('content', "Discover the real Digital Marketing roadmap for 2026. Join our FREE live webinar, learn practical job-ready skills, and get a certificate on completion.");
+    }
+
     // Meta Pixel and Google Analytics PageView Tracking
     if (window.fbq) {
       window.fbq('track', 'PageView');

@@ -80,22 +80,11 @@ const Home = () => {
                 <span className="text-[10px] text-gray-500 uppercase tracking-wider font-semibold">LEARN_MORE</span>
               </div>
 
-              <div className="p-6 flex flex-col flex-grow relative">
-                <h2 className="text-xl font-bold text-white mb-3" style={{ fontFamily: 'var(--font-inter)' }}>{item.title}</h2>
-                <p className="text-gray-400 text-xs leading-relaxed mb-6">
-                  {item.description}
-                </p>
-
-                <div className="mt-auto flex items-center justify-between">
-                  <span className="text-[10px] text-gray-500 uppercase tracking-wider font-semibold">LEARN_MORE</span>
-                </div>
-
-                {/* Bottom right dark button */}
-                <div className="absolute bottom-4 right-4 w-6 h-6 flex items-center justify-center" style={{ backgroundColor: '#1A212D' }}>
-                  <svg className="w-3 h-3 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" d="M9 5l7 7-7 7"></path>
-                  </svg>
-                </div>
+              {/* Bottom right dark button */}
+              <div className="absolute bottom-4 right-4 w-6 h-6 flex items-center justify-center" style={{ backgroundColor: '#1A212D' }}>
+                <svg className="w-3 h-3 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" d="M9 5l7 7-7 7"></path>
+                </svg>
               </div>
             </div>
           </div>

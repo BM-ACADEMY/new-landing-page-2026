@@ -86,7 +86,7 @@ export default function AiTools() {
       <Certificate />
       <Testimonials />
       <FAQ />
-      <WebinarForm isModal={false} />
+      <BookDemo isModal={false} />
       <FinalCTA onBookClick={openWebinarModal} />
       <Footer onBookClick={openWebinarModal} />
       <MobileCTA onBookClick={openWebinarModal} />

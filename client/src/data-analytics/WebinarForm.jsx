@@ -36,7 +36,7 @@ export default function WebinarForm({ isModal = false, onClose }) {
 
     setIsSubmitting(true);
 
-    const WEBHOOK_URL = "https://script.google.com/macros/s/AKfycbxsOGaZv_rf8OH09ltxdclLrdl9Z26BxeYL8WCSFxT5MBAMqWN0Fju7MsW6VodWm5eLiQ/exec";
+    const WEBHOOK_URL = "https://script.google.com/macros/s/AKfycbxbPDFD0nRWtwVPFSlzWUAvV3_h168ZE8pdYrGls0nHDy_EFZvRloTQ_iJjf6Kb7QGZ/exec";
     if (WEBHOOK_URL) {
       fetch(WEBHOOK_URL, {
         method: "POST",

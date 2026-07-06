@@ -73,7 +73,7 @@ export default function DataAnalytics() {
     <div className="min-h-screen bg-bg-dark text-text-brand pb-[74px] sm:pb-0 relative font-inter">
       <Header onBookClick={openWebinarModal} />
       <Trustbar />
-      <Hero onBookClick={openModal} />
+      <Hero onBookClick={openWebinarModal} />
       <Fears />
       <Skills />
       <About />

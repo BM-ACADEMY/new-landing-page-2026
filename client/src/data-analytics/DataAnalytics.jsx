@@ -76,9 +76,9 @@ export default function DataAnalytics() {
       <About />
       <WebinarSection onBookClick={openModal} />
       <Transformation />
+      <SampleCertificate />
       <Tracks onBookClick={openModal} />
       <Guarantee />
-      <SampleCertificate />
       <Certificate />
       <LiveStatus />
       <Testimonials />

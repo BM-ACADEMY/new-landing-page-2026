@@ -5,8 +5,10 @@ import Hero from './Hero';
 import Fears from './Fears';
 import Skills from './Skills';
 import About from './About';
+import WebinarSection from './WebinarSection';
 import Guarantee from './Guarantee';
 import Tracks from './Tracks';
+import SampleCertificate from './SampleCertificate';
 import Certificate from './Certificate';
 import LiveStatus from './LiveStatus';
 import Transformation from './Transformation';
@@ -72,11 +74,13 @@ export default function DataAnalytics() {
       <Fears />
       <Skills />
       <About />
+      <WebinarSection onBookClick={openModal} />
+      <Transformation />
       <Guarantee />
       <Tracks onBookClick={openModal} />
+      <SampleCertificate />
       <Certificate />
       <LiveStatus />
-      <Transformation />
       <Testimonials />
       <FAQ />
       <BookDemo isModal={false} />

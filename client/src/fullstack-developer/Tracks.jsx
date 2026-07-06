@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 
-export default function Tracks() {
+export default function Tracks({ onBookClick }) {
   const containerRef = useRef(null);
 
   useEffect(() => {
@@ -24,11 +24,7 @@ export default function Tracks() {
     };
   }, []);
 
-  const openWhatsApp = (tier) => {
-    const waNumber = "919944940051";
-    const msg = `Hi BM Academy 👋\n\nI'd like to book a free 1:1 demo.\n\n📚 Program: Full Stack Development (${tier})\n\nPlease confirm a slot. Thank you 🙏`;
-    window.open(`https://wa.me/${waNumber}?text=${encodeURIComponent(msg)}`, "_blank");
-  };
+
 
   return (
     <section id="tracks" className="py-[58px] bg-bg-dark">
@@ -61,7 +57,7 @@ export default function Tracks() {
             </div>
 
             <button
-              onClick={() => openWhatsApp("Tier 1 Skill Track")}
+              onClick={() => onBookClick && onBookClick("Tier 1 · Skill Track")}
               className="w-full inline-flex items-center justify-center gap-2.5 font-bold text-base px-[26px] py-[15px] rounded-xl cursor-pointer border border-white/10 bg-white/5 text-white transition-all duration-200 hover:bg-white/10 hover:border-pink-brand hover:text-pink-brand"
             >
               Book Demo
@@ -87,7 +83,7 @@ export default function Tracks() {
             </div>
 
             <button
-              onClick={() => openWhatsApp("Tier 2 Placement Track")}
+              onClick={() => onBookClick && onBookClick("Tier 2 · Placement Track")}
               className="w-full inline-flex items-center justify-center gap-2.5 font-bold text-base px-[26px] py-[15px] rounded-xl cursor-pointer border-none bg-gradient-to-r from-pink-brand via-violet-brand to-blue-brand text-white transition-all duration-200 hover:brightness-[1.1] hover:shadow-lg w-full"
             >
               Book Demo

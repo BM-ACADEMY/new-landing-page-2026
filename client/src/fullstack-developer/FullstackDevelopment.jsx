@@ -24,6 +24,7 @@ import FloatingWhatsApp from '../digital-marketing/FloatingWhatsApp';
 export default function FullstackDevelopment() {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [isWebinarModalOpen, setIsWebinarModalOpen] = useState(false);
+  const [selectedProgram, setSelectedProgram] = useState('');
 
   useEffect(() => {
     // Set document meta
@@ -64,8 +65,9 @@ export default function FullstackDevelopment() {
     };
   }, []);
 
-  const openModal = () => setIsModalOpen(true);
+  const openModal = () => { setSelectedProgram(''); setIsModalOpen(true); };
   const closeModal = () => setIsModalOpen(false);
+  const openModalWithProgram = (program) => { setSelectedProgram(program); setIsModalOpen(true); };
 
   const openWebinarModal = () => setIsWebinarModalOpen(true);
   const closeWebinarModal = () => setIsWebinarModalOpen(false);
@@ -81,7 +83,7 @@ export default function FullstackDevelopment() {
       <WebinarSection onBookClick={openWebinarModal} />
       <Transformation />
       <SampleCertificate />
-      <Tracks onBookClick={openModal} />
+      <Tracks onBookClick={openModalWithProgram} />
       <Guarantee />
       <Certificate />
       <Testimonials />
@@ -97,7 +99,7 @@ export default function FullstackDevelopment() {
         <div className="fixed inset-0 z-55 bg-black/80 backdrop-blur-sm flex items-center justify-center p-4">
           <div className="relative w-full max-w-[560px] select-none">
             <div className="max-h-[90vh] overflow-y-auto rounded-2xl bg-panel border border-white/20">
-              <BookDemo isModal={true} onClose={closeModal} />
+              <BookDemo isModal={true} onClose={closeModal} selectedProgram={selectedProgram} />
             </div>
           </div>
         </div>

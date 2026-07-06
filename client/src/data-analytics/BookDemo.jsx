@@ -45,7 +45,7 @@ export default function BookDemo({ selectedProgram, isModal = false, onClose }) 
     const program = selectedProgram || "Data Analytics";
     const formattedDate = new Date(dateTime).toLocaleString();
 
-    const WEBHOOK_URL = "https://script.google.com/macros/s/AKfycbxzdYLV8T7C1zB8uKHarTr3svdjAxlJblQlHuXZFdklrXRNtfjYwypfDpHa9e9wDZGByw/exec";
+    const WEBHOOK_URL = "https://script.google.com/macros/s/AKfycbwze3EX5T2XHCo1QY_WWAkPYaKQRuFif69H8D7MyWsnfGbtX-zFi1JCqtZAGLH8eOk56w/exec";
 
     if (WEBHOOK_URL) {
       fetch(WEBHOOK_URL, {

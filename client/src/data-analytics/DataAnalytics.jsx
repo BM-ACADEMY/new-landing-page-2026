@@ -14,6 +14,7 @@ import Transformation from './Transformation';
 import Testimonials from './Testimonials';
 import FAQ from './FAQ';
 import BookDemo from './BookDemo';
+import WebinarForm from './WebinarForm';
 import FinalCTA from './FinalCTA';
 import Footer from './Footer';
 import MobileCTA from './MobileCTA';
@@ -21,6 +22,7 @@ import FloatingWhatsApp from '../digital-marketing/FloatingWhatsApp';
 
 export default function DataAnalytics() {
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const [isWebinarModalOpen, setIsWebinarModalOpen] = useState(false);
 
   useEffect(() => {
     // Set document meta
@@ -63,6 +65,9 @@ export default function DataAnalytics() {
 
   const openModal = () => setIsModalOpen(true);
   const closeModal = () => setIsModalOpen(false);
+  
+  const openWebinarModal = () => setIsWebinarModalOpen(true);
+  const closeWebinarModal = () => setIsWebinarModalOpen(false);
 
   return (
     <div className="min-h-screen bg-bg-dark text-text-brand pb-[74px] sm:pb-0 relative font-inter">
@@ -72,7 +77,7 @@ export default function DataAnalytics() {
       <Fears />
       <Skills />
       <About />
-      <WebinarSection onBookClick={openModal} />
+      <WebinarSection onBookClick={openWebinarModal} />
       <Transformation />
       <SampleCertificate />
       <Tracks onBookClick={openModal} />
@@ -81,7 +86,7 @@ export default function DataAnalytics() {
       <Testimonials />
       <FAQ />
       <BookDemo isModal={false} />
-      <FinalCTA onBookClick={openModal} />
+      <FinalCTA onBookClick={openWebinarModal} />
       <Footer onBookClick={openModal} />
       <MobileCTA onBookClick={openModal} />
 
@@ -91,6 +96,17 @@ export default function DataAnalytics() {
           <div className="relative w-full max-w-[560px] select-none">
             <div className="max-h-[90vh] overflow-y-auto rounded-2xl bg-panel border border-white/20">
               <BookDemo isModal={true} onClose={closeModal} />
+            </div>
+          </div>
+        </div>
+      )}
+
+      {/* Webinar Modal Overlay */}
+      {isWebinarModalOpen && (
+        <div className="fixed inset-0 z-55 bg-black/80 backdrop-blur-sm flex items-center justify-center p-4">
+          <div className="relative w-full max-w-[480px] select-none">
+            <div className="max-h-[90vh] overflow-y-auto rounded-[20px]">
+              <WebinarForm isModal={true} onClose={closeWebinarModal} />
             </div>
           </div>
         </div>

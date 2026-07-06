@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 
-export default function Tracks({ onSelectProgram }) {
+export default function Tracks({ onBookClick }) {
   const containerRef = useRef(null);
 
   useEffect(() => {
@@ -55,7 +55,7 @@ export default function Tracks({ onSelectProgram }) {
             </div>
 
             <button
-              onClick={() => onSelectProgram("Data Analytics (Tier 1)")}
+              onClick={() => onBookClick("Data Analytics (Tier 1)")}
               className="w-full inline-flex items-center justify-center gap-2.5 font-bold text-base px-[26px] py-[15px] rounded-xl cursor-pointer border border-white/10 bg-white/5 text-white transition-all duration-200 hover:bg-white/10 hover:border-pink-brand hover:text-pink-brand"
             >
               Book Demo
@@ -81,7 +81,7 @@ export default function Tracks({ onSelectProgram }) {
             </div>
 
             <button
-              onClick={() => onSelectProgram("Data Analytics (Tier 2 - Placement)")}
+              onClick={() => onBookClick("Data Analytics (Tier 2 - Placement)")}
               className="w-full inline-flex items-center justify-center gap-2.5 font-bold text-base px-[26px] py-[15px] rounded-xl cursor-pointer border-none bg-gradient-to-r from-pink-brand via-violet-brand to-blue-brand text-white transition-all duration-200 hover:brightness-[1.1] hover:shadow-lg w-full"
             >
               Book Demo

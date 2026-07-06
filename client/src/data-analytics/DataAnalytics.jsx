@@ -17,7 +17,6 @@ import BookDemo from './BookDemo';
 import FinalCTA from './FinalCTA';
 import Footer from './Footer';
 import MobileCTA from './MobileCTA';
-import MapSection from './MapSection';
 import FloatingWhatsApp from '../digital-marketing/FloatingWhatsApp';
 
 export default function DataAnalytics() {
@@ -83,7 +82,6 @@ export default function DataAnalytics() {
       <FAQ />
       <BookDemo isModal={false} />
       <FinalCTA onBookClick={openModal} />
-      <MapSection />
       <Footer />
       <MobileCTA onBookClick={openModal} />
 

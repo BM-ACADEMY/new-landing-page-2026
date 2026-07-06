@@ -71,7 +71,7 @@ export default function DataAnalytics() {
 
   return (
     <div className="min-h-screen bg-bg-dark text-text-brand pb-[74px] sm:pb-0 relative font-inter">
-      <Header onBookClick={openModal} />
+      <Header onBookClick={openWebinarModal} />
       <Trustbar />
       <Hero onBookClick={openModal} />
       <Fears />

@@ -10,15 +10,15 @@ export default function Hero({ onBookClick }) {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
             entry.target.classList.add('in');
-            
+
             // Animation for counts
             const duration = 1200;
             const steps = 40;
             const intervalTime = duration / steps;
-            
+
             const targetTrained = 1400;
             const targetPlaced = 150;
-            
+
             let currentStep = 0;
             const interval = setInterval(() => {
               currentStep++;
@@ -30,7 +30,7 @@ export default function Hero({ onBookClick }) {
                 clearInterval(interval);
               }
             }, intervalTime);
-            
+
             observer.unobserve(entry.target);
           }
         });
@@ -54,11 +54,11 @@ export default function Hero({ onBookClick }) {
     <section className="py-[50px] relative overflow-hidden bg-bg-dark">
       {/* Background radial glow */}
       <div className="absolute w-[600px] h-[600px] left-1/2 top-[-260px] -translate-x-1/2 bg-[radial-gradient(circle,rgba(124,92,252,0.18),transparent_65%)] pointer-events-none"></div>
-      
+
       <div className="max-w-[1080px] mx-auto px-5 grid grid-cols-1 md:grid-cols-[1.04fr_.96fr] gap-[44px] items-center relative">
         <div>
           <span className="inline-flex items-center gap-[9px] text-[0.76rem] font-semibold text-white border border-white/9 bg-white/4 px-[14px] py-[7px] rounded-full tracking-[0.02em]">
-            <span className="w-[7px] h-[7px] rounded-full bg-green-brand shadow-[0_0_0_4px_rgba(74,222,128,0.2)]"></span> 
+            <span className="w-[7px] h-[7px] rounded-full bg-green-brand shadow-[0_0_0_4px_rgba(74,222,128,0.2)]"></span>
             WORDPRESS PRO · NEW BATCH FORMING
           </span>
           <h1 className="font-sora font-extrabold text-[2rem] sm:text-[3.2rem] leading-[1.08] tracking-[-0.025em] mt-5 mb-0 text-white">
@@ -67,15 +67,15 @@ export default function Hero({ onBookClick }) {
           <p className="text-[#C8C2DC] text-[1rem] sm:text-[1.1rem] mt-[18px] mb-[28px] max-w-[540px] leading-relaxed">
             Learn to build real, professional <b>WordPress websites</b> — business sites, e-commerce stores, and portfolios — without writing a single line of code. Start charging ₹15,000–₹25,000 per project. No mass webinar — only a free 1:1 demo session.
           </p>
-          <div className="flex flex-wrap gap-[13px]">
-            <button 
+          <div className="flex gap-[13px]">
+            <button
               onClick={onBookClick}
-              className="inline-flex items-center justify-center gap-2.5 font-bold text-base px-[26px] py-[15px] rounded-xl cursor-pointer border-none bg-gradient-to-r from-pink-brand via-violet-brand to-blue-brand text-white shadow-[0_14px_34px_-12px_rgba(255,61,129,0.55)] transition-all duration-200 hover:-translate-y-0.5 hover:brightness-[1.06]"
+              className="inline-flex items-center justify-center gap-2.5 font-bold text-base px-[26px] py-[15px] rounded-xl cursor-pointer border-none bg-gradient-to-r from-pink-brand via-violet-brand to-blue-brand text-white shadow-[0_14px_34px_-12px_rgba(255,61,129,0.55)] transition-all duration-200 hover:-translate-y-0.5 hover:brightness-[1.06] whitespace-nowrap"
             >
-              Book Your Free 1:1 Demo →
+              Register for Free Webinar →
             </button>
-            <a 
-              className="inline-flex items-center justify-center gap-2.5 font-bold text-base px-[26px] py-[15px] rounded-xl cursor-pointer border border-white/9 bg-transparent text-white transition-all duration-200 hover:border-pink-brand hover:text-pink-brand"
+            <a
+              className="inline-flex items-center justify-center gap-2.5 font-bold text-base px-[26px] py-[15px] rounded-xl cursor-pointer border border-white/9 bg-transparent text-white transition-all duration-200 hover:border-pink-brand hover:text-pink-brand whitespace-nowrap"
               href="#skills"
             >
               See What You'll Learn

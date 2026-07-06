@@ -68,7 +68,7 @@ export default function Hero({ onBookClick }) {
             Learn <b className="text-white"> Learn HTML, CSS, JavaScript, React, Node.js, Express.js, and MongoDB </b> by building real-world web applications—not just tutorials. Open to students and professionals from any background.  <b className="text-white"> Join our FREE Live Full Stack Development Webinar </b>to explore the complete learning roadmap, live projects, career opportunities, and how to become a job-ready Full Stack Developer.
 
           </p>
-          <div className="flex flex-wrap gap-[13px]">
+          <div className="flex gap-[13px]">
             <button
               onClick={onBookClick}
               className="inline-flex items-center justify-center gap-2.5 font-bold text-base px-[26px] py-[15px] rounded-xl cursor-pointer border-none bg-gradient-to-r from-pink-brand via-violet-brand to-blue-brand text-white shadow-[0_14px_34px_-12px_rgba(255,61,129,0.55)] transition-all duration-200 hover:-translate-y-0.5 hover:brightness-[1.06]"

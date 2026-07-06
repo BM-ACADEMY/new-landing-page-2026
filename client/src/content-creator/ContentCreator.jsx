@@ -49,10 +49,10 @@ export default function ContentCreator() {
 
   useEffect(() => {
     // Set document meta
-    document.title = "Free Content Creator Webinar | Learn Content Creation in Pondicherry";
+    document.title = "Content Creator Webinar in Pondicherry | Register Free";
     const metaDescription = document.querySelector('meta[name="description"]');
     if (metaDescription) {
-      metaDescription.setAttribute('content', 'Join our FREE Content Creator Webinar in Pondicherry and learn content creation, video editing, branding, and social media growth. Register today!');
+      metaDescription.setAttribute('content', "Join BM Academy's Free Digital Content Creator Webinar in Pondicherry and learn content strategy, scripting, shooting, editing, AI tools, and social media growth");
     }
     
     // Meta Pixel and Google Analytics PageView Tracking

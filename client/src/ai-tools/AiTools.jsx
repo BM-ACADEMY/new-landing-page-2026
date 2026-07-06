@@ -26,6 +26,13 @@ export default function AiTools() {
 
   // Reveal Animation on Scroll
   useEffect(() => {
+    // Set document meta
+    document.title = "AI Career Course in Pondicherry | Register Free Webinar";
+    const metaDescription = document.querySelector('meta[name="description"]');
+    if (metaDescription) {
+      metaDescription.setAttribute('content', "Join BM Academy's Free AI Webinar in Pondicherry and learn AI tools, automation, prompt engineering, and career-ready skills with expert mentors. Enroll today.");
+    }
+
     // Meta Pixel and Google Analytics PageView Tracking
     if (window.fbq) {
       window.fbq('track', 'PageView');

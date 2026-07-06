@@ -32,63 +32,80 @@ export default function Transformation() {
   const steps = [
     {
       id: 1,
-      tag: "Before",
-      title: "Posting without a plan",
-      desc: "Posts reels randomly with little growth. No system, no income from content.",
-      bg: "bg-[#f4f1eb]",
-      border: "border-[#d6d2c4]",
-      textColor: "text-[#333333]",
-      tagColor: "text-[#7b776c]"
+      tag: "START HERE",
+      title: "Anyone can join",
+      desc: "No degree, no age limit, no prior experience — just enroll and begin.",
+      bg: "bg-[#fcfaf2]",
+      border: "border-[#ebdcc3]",
+      textColor: "text-[#3a352a]",
+      tagColor: "text-[#a08450]",
+      dotBg: "bg-lime-brand text-black shadow-[0_0_15px_rgba(198,242,78,0.4)]"
     },
     {
       id: 2,
-      tag: "Week 1",
-      title: "First real hook",
-      desc: "Learns to write hooks and scripts that actually hold attention.",
+      tag: "WEEK 1",
+      title: "Hook & Script Writing",
+      desc: "Writing hooks and scripts that stop the scroll and hold attention.",
       bg: "bg-[#fbf0f2]",
       border: "border-[#ebd0d6]",
       textColor: "text-[#5c1d2e]",
-      tagColor: "text-[#a04a60]"
+      tagColor: "text-[#a04a60]",
+      dotBg: "bg-pink-brand text-white shadow-[0_0_15px_rgba(255,61,129,0.4)]"
     },
     {
       id: 3,
-      tag: "Week 3",
-      title: "Editing confidence",
-      desc: "Shoots and edits content that looks genuinely professional.",
+      tag: "WEEK 2-3",
+      title: "Shooting & Editing",
+      desc: "Phone shooting techniques, pacing, transitions, and real edits.",
       bg: "bg-[#fbf0f2]",
       border: "border-[#ebd0d6]",
       textColor: "text-[#5c1d2e]",
-      tagColor: "text-[#a04a60]"
+      tagColor: "text-[#a04a60]",
+      dotBg: "bg-pink-brand text-white shadow-[0_0_15px_rgba(255,61,129,0.4)]"
     },
     {
       id: 4,
-      tag: "Week 4",
-      title: "First client-style work",
-      desc: "Creates content for a real or simulated brand — portfolio-ready.",
+      tag: "WEEK 4",
+      title: "Client Content",
+      desc: "Creating content for a real or simulated client — portfolio-ready.",
       bg: "bg-[#fbf0f2]",
       border: "border-[#ebd0d6]",
       textColor: "text-[#5c1d2e]",
-      tagColor: "text-[#a04a60]"
+      tagColor: "text-[#a04a60]",
+      dotBg: "bg-pink-brand text-white shadow-[0_0_15px_rgba(255,61,129,0.4)]"
     },
     {
       id: 5,
-      tag: "After",
-      title: "First paid project",
-      desc: "Lands a first paid brand collaboration or client project.",
-      bg: "bg-[#eff5eb]",
-      border: "border-[#cbe0bf]",
-      textColor: "text-[#2d5020]",
-      tagColor: "text-[#456f35]"
+      tag: "WEEK 5",
+      title: "Personal Brand",
+      desc: "Building your own content brand and portfolio alongside client work.",
+      bg: "bg-[#fbf0f2]",
+      border: "border-[#ebd0d6]",
+      textColor: "text-[#5c1d2e]",
+      tagColor: "text-[#a04a60]",
+      dotBg: "bg-pink-brand text-white shadow-[0_0_15px_rgba(255,61,129,0.4)]"
     },
     {
       id: 6,
-      tag: "Lifestyle shift",
-      title: "Creative income",
-      desc: "A flexible, creative skill that can grow into a full income stream over time.",
+      tag: "WEEK 6",
+      title: "Posting Strategy & Growth",
+      desc: "Analytics, posting strategy, and turning content into consistent income.",
+      bg: "bg-[#fbf0f2]",
+      border: "border-[#ebd0d6]",
+      textColor: "text-[#5c1d2e]",
+      tagColor: "text-[#a04a60]",
+      dotBg: "bg-pink-brand text-white shadow-[0_0_15px_rgba(255,61,129,0.4)]"
+    },
+    {
+      id: 7,
+      tag: "YOU CAN NOW",
+      title: "Start earning from content",
+      desc: "Take on paid brand collaborations and client projects — with a real portfolio to show.",
       bg: "bg-[#eff5eb]",
       border: "border-[#cbe0bf]",
       textColor: "text-[#2d5020]",
-      tagColor: "text-[#456f35]"
+      tagColor: "text-[#456f35]",
+      dotBg: "bg-[#10b981] text-white shadow-[0_0_15px_rgba(16,185,129,0.4)]"
     }
   ];
 
@@ -123,7 +140,7 @@ export default function Transformation() {
                 <div className="hidden md:block w-[calc(50%-30px)]"></div>
                 
                 {/* Timeline Dot (Numbered) */}
-                <div className="z-20 flex items-center justify-center bg-violet-brand text-white font-sora font-extrabold text-sm w-8 h-8 rounded-full absolute left-[4px] md:left-1/2 md:-translate-x-1/2 border-2 border-bg-dark shadow-[0_0_15px_rgba(124,92,252,0.3)]">
+                <div className={`z-20 flex items-center justify-center font-sora font-extrabold text-sm w-8 h-8 rounded-full absolute left-[4px] md:left-1/2 md:-translate-x-1/2 border-2 border-bg-dark ${step.dotBg}`}>
                   {step.id}
                 </div>
                 

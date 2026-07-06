@@ -84,7 +84,7 @@ export default function Certificate() {
             Learn. Practice. Get Certified.
           </h2>
           <p className="text-muted-brand text-[1.02rem] mt-2 mb-8 max-w-[620px] mx-auto">
-            Our students earn recognized certifications that open doors to premium digital marketing roles worldwide.
+            Our students earn recognized certifications that open doors to premium Full Stack Development roles worldwide.
           </p>
 
           <div className="flex flex-wrap justify-center gap-6 w-full mt-8">

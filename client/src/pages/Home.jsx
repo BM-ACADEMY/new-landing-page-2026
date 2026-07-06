@@ -33,7 +33,7 @@ const Home = () => {
           CHOOSE YOUR PATH
         </h1>
 
-        <div className="flex flex-wrap justify-center gap-8 mx-auto w-full">
+        <div className="flex flex-wrap justify-center gap-8 mx-auto w-full max-w-[1080px]">
           
           {/* Card 1 - Digital Marketing */}
           <div 
@@ -125,6 +125,96 @@ const Home = () => {
             </div>
           </div>
 
+          {/* Card 4 - Full Stack Development */}
+          <div 
+            onClick={() => navigate('/fullstack-development')}
+            className="group cursor-pointer rounded overflow-hidden flex flex-col transition-transform hover:-translate-y-1 w-full max-w-[320px]"
+            style={{ backgroundColor: '#101010', minHeight: '400px' }}
+          >
+            {/* Image area */}
+            <div className="w-full h-48 relative overflow-hidden bg-[#101010] border-b border-white/20">
+               <img src="/Home/fullstack.png" alt="Full Stack Development" className="w-full h-full object-cover" />
+            </div>
+            
+            <div className="p-6 flex flex-col flex-grow relative">
+              <h2 className="text-xl font-bold text-white mb-3" style={{ fontFamily: 'var(--font-inter)' }}>FULL STACK DEVELOPMENT</h2>
+              <p className="text-gray-400 text-xs leading-relaxed mb-6">
+                Become a job-ready Full Stack Developer in 6 months — no coding background required. Build real web apps with HTML, CSS, JS, React & Node.
+              </p>
+              
+              <div className="mt-auto flex items-center justify-between">
+                <span className="text-[10px] text-gray-500 uppercase tracking-wider font-semibold">LEARN_MORE</span>
+              </div>
+              
+              {/* Bottom right dark button */}
+              <div className="absolute bottom-4 right-4 w-6 h-6 flex items-center justify-center" style={{ backgroundColor: '#1A212D' }}>
+                <svg className="w-3 h-3 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" d="M9 5l7 7-7 7"></path>
+                </svg>
+              </div>
+            </div>
+          </div>
+
+          {/* Card 5 - Data Analytics */}
+          <div 
+            onClick={() => navigate('/data-analytics')}
+            className="group cursor-pointer rounded overflow-hidden flex flex-col transition-transform hover:-translate-y-1 w-full max-w-[320px]"
+            style={{ backgroundColor: '#101010', minHeight: '400px' }}
+          >
+            {/* Image area */}
+            <div className="w-full h-48 relative overflow-hidden bg-[#101010] border-b border-white/20">
+               <img src="/Home/data-analytics.png" alt="Data Analytics" className="w-full h-full object-cover" />
+            </div>
+            
+            <div className="p-6 flex flex-col flex-grow relative">
+              <h2 className="text-xl font-bold text-white mb-3" style={{ fontFamily: 'var(--font-inter)' }}>DATA ANALYTICS</h2>
+              <p className="text-gray-400 text-xs leading-relaxed mb-6">
+                Excel, SQL, Power BI & Python with real business datasets. Open to any background. Placement support + 20% refund guarantee.
+              </p>
+              
+              <div className="mt-auto flex items-center justify-between">
+                <span className="text-[10px] text-gray-500 uppercase tracking-wider font-semibold">LEARN_MORE</span>
+              </div>
+              
+              {/* Bottom right dark button */}
+              <div className="absolute bottom-4 right-4 w-6 h-6 flex items-center justify-center" style={{ backgroundColor: '#1A212D' }}>
+                <svg className="w-3 h-3 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" d="M9 5l7 7-7 7"></path>
+                </svg>
+              </div>
+            </div>
+          </div>
+
+          {/* Card 6 - WordPress Pro */}
+          <div 
+            onClick={() => navigate('/wordpress-pro')}
+            className="group cursor-pointer rounded overflow-hidden flex flex-col transition-transform hover:-translate-y-1 w-full max-w-[320px]"
+            style={{ backgroundColor: '#101010', minHeight: '400px' }}
+          >
+            {/* Image area */}
+            <div className="w-full h-48 relative overflow-hidden bg-[#101010] border-b border-white/20">
+               <img src="/Home/wordpress.png" alt="WordPress Pro" className="w-full h-full object-cover" />
+            </div>
+            
+            <div className="p-6 flex flex-col flex-grow relative">
+              <h2 className="text-xl font-bold text-white mb-3" style={{ fontFamily: 'var(--font-inter)' }}>WORDPRESS PRO</h2>
+              <p className="text-gray-400 text-xs leading-relaxed mb-6">
+                Build professional, client-ready websites in 8 weeks visually without coding. Earn side income from freelance web design.
+              </p>
+              
+              <div className="mt-auto flex items-center justify-between">
+                <span className="text-[10px] text-gray-500 uppercase tracking-wider font-semibold">LEARN_MORE</span>
+              </div>
+              
+              {/* Bottom right dark button */}
+              <div className="absolute bottom-4 right-4 w-6 h-6 flex items-center justify-center" style={{ backgroundColor: '#1A212D' }}>
+                <svg className="w-3 h-3 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" d="M9 5l7 7-7 7"></path>
+                </svg>
+              </div>
+            </div>
+          </div>
+
         </div>
       </div>
     </div>
@@ -132,3 +222,4 @@ const Home = () => {
 };
 
 export default Home;
+

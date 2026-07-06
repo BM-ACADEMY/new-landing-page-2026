@@ -74,6 +74,7 @@ export default function Certificate() {
                 <img
                   src={img.src}
                   alt={img.alt}
+                  loading="lazy"
                   className="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
                 />
               </div>
@@ -99,6 +100,7 @@ export default function Certificate() {
                 <img
                   src={cert.src}
                   alt={cert.alt}
+                  loading="lazy"
                   className="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
                 />
               </div>

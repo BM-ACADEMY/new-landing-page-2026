@@ -82,7 +82,7 @@ export default function DataAnalytics() {
       <FAQ />
       <BookDemo isModal={false} />
       <FinalCTA onBookClick={openModal} />
-      <Footer />
+      <Footer onBookClick={openModal} />
       <MobileCTA onBookClick={openModal} />
 
       {/* Booking Modal Overlay */}

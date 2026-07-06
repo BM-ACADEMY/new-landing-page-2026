@@ -27,10 +27,10 @@ export default function DataAnalytics() {
 
   useEffect(() => {
     // Set document meta
-    document.title = "Data Analytics Course in Pondicherry | ₹3–6 LPA Analyst Jobs — BM Academy";
+    document.title = "Data Analytics Course in Pondicherry | Free Webinar";
     const metaDescription = document.querySelector('meta[name="description"]');
     if (metaDescription) {
-      metaDescription.setAttribute('content', 'Job-ready Data Analytics course in Pondicherry. Excel, SQL, Power BI & Python with real datasets. Placement support + 20% fee refund guarantee. Book a free 1:1 demo at BM Academy, Kottakuppam.');
+      metaDescription.setAttribute('content', "Join BM Academy's Free Data Analytics Webinar in Pondicherry and learn Excel, SQL, Power BI, and Python. Explore the roadmap to becoming a job-ready Data Analyst.");
     }
 
     // Meta Pixel and Google Analytics PageView Tracking

@@ -30,7 +30,7 @@ export default function FAQ() {
           Frequently asked questions
         </h2>
 
-        <div className="border-t border-white/9">
+        <div className="mt-7 max-w-[780px] border-t border-white/9">
           {faqs.map((faq, idx) => {
             const isOpen = openIdx === idx;
             return (

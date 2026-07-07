@@ -239,6 +239,36 @@ const Home = () => {
             </div>
           </div>
 
+          {/* Card 7 - AI Marketing Agency */}
+          <div
+            onClick={() => navigate('/ai-marketing-agency')}
+            className="group cursor-pointer rounded overflow-hidden flex flex-col transition-transform hover:-translate-y-1 w-full max-w-[320px]"
+            style={{ backgroundColor: '#101010', minHeight: '400px' }}
+          >
+            {/* Image area */}
+            <div className="w-full h-48 relative overflow-hidden bg-[#101010] border-b border-white/20">
+              <img src="/Home/Marketing.png" alt="AI Marketing Agency" className="w-full h-full object-cover" />
+            </div>
+
+            <div className="p-6 flex flex-col flex-grow relative">
+              <h2 className="text-xl font-bold text-white mb-3" style={{ fontFamily: 'var(--font-inter)' }}>AI MARKETING AGENCY</h2>
+              <p className="text-gray-400 text-xs leading-relaxed mb-6">
+                Build your own AI marketing agency in 90 days. Learn, get clients, earn, and be your own boss with real projects and mentorship.
+              </p>
+
+              <div className="mt-auto flex items-center justify-between">
+                <span className="text-[10px] text-gray-500 uppercase tracking-wider font-semibold">LEARN_MORE</span>
+              </div>
+
+              {/* Bottom right dark button */}
+              <div className="absolute bottom-4 right-4 w-6 h-6 flex items-center justify-center" style={{ backgroundColor: '#1A212D' }}>
+                <svg className="w-3 h-3 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" d="M9 5l7 7-7 7"></path>
+                </svg>
+              </div>
+            </div>
+          </div>
+
         </div>
       </div>
     </div>

@@ -65,7 +65,7 @@ export default function Hero({ onBookClick }) {
             No coding skills? <span className="gradtext">Build professional client websites</span> in 8 weeks.
           </h1>
           <p className="text-[#C8C2DC] text-[1rem] sm:text-[1.1rem] mt-[18px] mb-[28px] max-w-[540px] leading-relaxed">
-            Learn to build real, professional <b>WordPress websites</b> — business sites, e-commerce stores, and portfolios — without writing a single line of code. Start charging ₹15,000–₹25,000 per project. No mass webinar — only a free 1:1 demo session.
+            Learn to build real, professional WordPress websites—business sites, e-commerce stores, and portfolios—without writing a single line of code. Start charging ₹15,000–₹25,000 per project. Attend our FREE Live Webinar to discover how you can build client websites and launch your WordPress career
           </p>
           <div className="flex gap-[13px]">
             <button

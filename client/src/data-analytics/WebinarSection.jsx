@@ -8,10 +8,12 @@ export default function WebinarSection({ onBookClick }) {
 
       <div className="max-w-[800px] mx-auto px-5 text-center relative z-10">
         <span className="text-[0.78rem] font-bold tracking-[0.06em] uppercase text-[#f7367a]">// FREE Live Webinar </span>
-        <h2 className="font-sora font-extrabold text-[1.35rem] sm:text-[1.8rem] leading-[1.14] tracking-[-0.025em] mt-3 mb-4 text-white">
-          Join our FREE Live Data Analytics Webinar and discover how to turn raw data into meaningful business insights. Learn the complete roadmap—from Excel and SQL to Power BI and Python—and see how our program prepares you for a successful Data Analytics career.
+        <h2 className="font-sora font-extrabold text-[1.35rem] sm:text-[1.8rem] leading-[1.14] tracking-[-0.025em] mt-3 mb-4 text-white reveal">
+          Join our FREE Live Data Analytics Webinar and discover how to turn raw data into meaningful business insights.
         </h2>
-
+        <p className="text-[#C8C2DC] text-[0.96rem] sm:text-[1.05rem] leading-relaxed max-w-[700px] mx-auto mb-10 reveal">
+          Learn the complete roadmap—from Excel and SQL to Power BI and Python—and see how our program prepares you for a successful Data Analytics career.
+        </p>
         {/* Mac OS Terminal Style Window Container */}
         <div className="mt-6 reveal bg-panel border border-white/9 rounded-[20px] shadow-[0_30px_70px_-30px_rgba(0,0,0,0.8)] text-left relative overflow-hidden">
           

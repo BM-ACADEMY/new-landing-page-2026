@@ -6,6 +6,7 @@ import ContentCreator from './content-creator/ContentCreator';
 import FullstackDevelopment from './fullstack-developer/FullstackDevelopment';
 import DataAnalytics from './data-analytics/DataAnalytics';
 import WordpressPro from './wordpress-pro/WordpressPro';
+import AiMarketingAgency from './ai-marketing-agency/AiMarketingAgency';
 import Home from './pages/Home';
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
         <Route path="/fullstack-developer" element={<FullstackDevelopment />} />
         <Route path="/data-analytics" element={<DataAnalytics />} />
         <Route path="/wordpress-pro" element={<WordpressPro />} />
+        <Route path="/ai-marketing-agency" element={<AiMarketingAgency />} />
       </Routes>
     </Router>
   );

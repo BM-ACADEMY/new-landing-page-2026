@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Build Your Own AI Marketing Agency in 90 Days | BM Academy Pondicherry</title>
+<meta name="description" content="Learn. Get Clients. Earn. Be your own boss. 12 modules, real projects, mentorship till your first client. Free live webinar — register now." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Sora:wght@600;700;800&family=Inter:wght@400;500;600;700&family=Noto+Sans+Tamil:wght@500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#0A0A0B;--panel:#141412;--panel-2:#1C1B17;--line:rgba(255,255,255,.09);
+    --gold:#F5B301;--gold-2:#FFCA28;--gold-d:#D99700;--ink:#0A0A0B;
+    --text:#F4F1E9;--muted:#9A968C;--green:#4ADE80;--red:#FF5A4D;
+    --radius:16px;--maxw:1100px;
+    --display:'Anton',sans-serif;--disp:'Sora',sans-serif;--body:'Inter','Noto Sans Tamil',sans-serif;--tam:'Noto Sans Tamil','Inter',sans-serif;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{font-family:var(--body);background:var(--bg);color:var(--text);line-height:1.55;-webkit-font-smoothing:antialiased}
+  a{text-decoration:none;color:inherit}
+  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 20px}
+  .tam{font-family:var(--tam)}.gold{color:var(--gold)}
+
+  .topbar{position:sticky;top:0;z-index:50;background:rgba(10,10,11,.94);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+  .topbar .wrap{display:flex;align-items:center;justify-content:space-between;height:62px}
+  .brand{font-family:var(--disp);font-weight:800;font-size:1.05rem;color:#fff;display:flex;align-items:center;gap:8px}
+  .brand .logo{width:30px;height:30px;border-radius:7px;background:var(--gold);color:var(--ink);display:grid;place-items:center;font-family:var(--display);font-size:.9rem}
+  .top-cta{display:inline-flex;gap:8px;background:var(--gold);color:var(--ink);font-weight:700;font-size:.84rem;padding:10px 18px;border-radius:10px;transition:.2s}
+  .top-cta:hover{background:var(--gold-d);transform:translateY(-1px)}
+
+  .hero{padding:52px 0 46px;position:relative;overflow:hidden}
+  .hero::before{content:"";position:absolute;width:600px;height:600px;right:-220px;top:-160px;border-radius:50%;background:radial-gradient(circle,rgba(245,179,1,.14),transparent 68%);pointer-events:none}
+  .hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:40px;align-items:center;position:relative}
+  .eyebrow{display:inline-flex;align-items:center;gap:9px;font-family:var(--disp);font-size:.74rem;font-weight:700;letter-spacing:.05em;text-transform:uppercase;color:var(--gold);border:1px solid rgba(245,179,1,.3);background:rgba(245,179,1,.07);padding:7px 14px;border-radius:999px}
+  .eyebrow .pulse{width:7px;height:7px;border-radius:50%;background:var(--green);box-shadow:0 0 0 4px rgba(74,222,128,.2)}
+  h1{font-family:var(--display);font-weight:400;font-size:clamp(2.6rem,7.5vw,4.6rem);line-height:.96;text-transform:uppercase}
+  h1 .y{color:var(--gold);display:block}
+  h1 .sm{font-size:.55em}
+  .sub{font-family:var(--disp);font-weight:600;font-size:clamp(1.05rem,2.6vw,1.35rem);margin:18px 0 6px;color:#fff}
+  .sub .g{color:var(--gold)}
+  .subline{color:#C9C4B7;font-size:1rem;margin-bottom:26px;max-width:540px}.subline b{color:#fff}
+  .cta-row{display:flex;flex-wrap:wrap;gap:13px;align-items:center}
+  .btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;font-weight:700;font-size:1rem;padding:15px 26px;border-radius:12px;cursor:pointer;border:none;transition:.2s;font-family:var(--body)}
+  .btn-primary{background:var(--gold);color:var(--ink);box-shadow:0 14px 34px -12px rgba(245,179,1,.55)}
+  .btn-primary:hover{background:var(--gold-d);transform:translateY(-2px)}
+  .btn-ghost{background:transparent;color:#fff;border:1px solid var(--line)}.btn-ghost:hover{border-color:var(--gold);color:var(--gold)}
+  .webinar-line{display:flex;align-items:center;gap:8px;font-size:.86rem;color:var(--muted);margin-top:15px}.webinar-line b{color:#fff}
+  .proof-row{display:flex;flex-wrap:wrap;gap:10px;margin-top:26px}
+  .pill{background:var(--panel);border:1px solid var(--line);border-radius:999px;padding:8px 15px;font-size:.82rem;color:#C9C4B7}.pill b{color:#fff;font-family:var(--disp)}
+
+  .hcard{background:linear-gradient(180deg,var(--panel),var(--panel-2));border:1px solid var(--line);border-radius:20px;padding:26px;box-shadow:0 30px 70px -30px rgba(0,0,0,.8);position:relative;overflow:hidden}
+  .hcard::before{content:"";position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--gold),transparent)}
+  .hcard .tag{font-family:var(--disp);font-weight:700;font-size:.72rem;letter-spacing:.05em;text-transform:uppercase;color:var(--gold)}
+  .hcard .partner{font-family:var(--display);font-size:1.5rem;color:#fff;text-transform:uppercase;margin:8px 0 14px;line-height:1.05}
+  .hcard ul{list-style:none;display:grid;gap:10px}
+  .hcard li{display:flex;gap:10px;font-size:.92rem;color:#DDD8CB}.hcard li .tk{color:var(--gold);font-weight:700;flex-shrink:0}
+  .hcard .foot{margin-top:16px;padding-top:16px;border-top:1px solid var(--line);font-size:.8rem;color:var(--muted)}.hcard .foot b{color:var(--gold)}
+
+  section{padding:60px 0}
+  .kicker{font-family:var(--disp);font-size:.78rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--gold)}
+  .h2{font-family:var(--disp);font-weight:800;font-size:clamp(1.7rem,4.6vw,2.5rem);line-height:1.12;letter-spacing:-.02em;margin:12px 0 0}
+  .lead{color:var(--muted);font-size:1.05rem;margin-top:14px;max-width:640px}
+
+  .pillars{background:var(--panel);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+  .pgrid{display:grid;grid-template-columns:repeat(5,1fr);gap:14px}
+  .pil{text-align:center;padding:10px}
+  .pil .ic{width:54px;height:54px;margin:0 auto 12px;border-radius:14px;background:var(--panel-2);border:1px solid var(--line);display:grid;place-items:center;font-size:1.4rem}
+  .pil h3{font-family:var(--disp);font-weight:700;font-size:.95rem;line-height:1.2}
+  .pil p{color:var(--muted);font-size:.8rem;margin-top:5px}
+
+  .moat-grid{display:grid;grid-template-columns:1fr 1fr;gap:22px;margin-top:38px}
+  .moat-col{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);padding:28px 26px}
+  .moat-col h3{font-family:var(--disp);font-weight:700;font-size:1.15rem;margin-bottom:16px}
+  .moat-col.bad h3{color:var(--muted)}.moat-col.good{border-color:rgba(245,179,1,.4);box-shadow:0 0 0 1px rgba(245,179,1,.2)}.moat-col.good h3{color:var(--gold)}
+  .moat-col ul{list-style:none;display:grid;gap:12px}
+  .moat-col li{display:flex;gap:10px;font-size:.95rem;color:#DDD8CB}.moat-col.bad li{color:var(--muted)}
+  .moat-col li .m{flex-shrink:0;font-weight:700}.moat-col.bad li .m{color:var(--red)}.moat-col.good li .m{color:var(--green)}
+
+  .income{background:linear-gradient(180deg,transparent,rgba(245,179,1,.04))}
+  .compare{display:grid;grid-template-columns:1fr auto 1fr;gap:20px;align-items:center;margin-top:36px}
+  .cbox{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);padding:28px 24px;text-align:center}
+  .cbox.win{border-color:var(--gold);box-shadow:0 0 0 1px var(--gold)}
+  .cbox .l{font-family:var(--disp);font-size:.8rem;text-transform:uppercase;letter-spacing:.04em;color:var(--muted)}
+  .cbox .v{font-family:var(--display);font-size:2.4rem;color:#fff;margin:8px 0 4px}.cbox.win .v{color:var(--gold)}
+  .cbox .d{font-size:.86rem;color:var(--muted)}
+  .cvs{font-family:var(--display);font-size:1.4rem;color:var(--muted)}
+  .math{margin-top:22px;background:var(--panel);border:1px dashed rgba(245,179,1,.4);border-radius:14px;padding:18px 20px;text-align:center;font-family:var(--disp);font-weight:600;color:#fff}.math .g{color:var(--gold)}
+
+  /* curriculum */
+  .curric{background:var(--panel);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+  .mod-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:36px}
+  .mod{background:var(--bg);border:1px solid var(--line);border-radius:14px;padding:20px 22px;display:flex;gap:16px;align-items:flex-start}
+  .mod .mn{font-family:var(--display);font-size:1.6rem;color:rgba(245,179,1,.55);line-height:1;min-width:34px}
+  .mod .mt{font-family:var(--disp);font-weight:700;font-size:1.02rem;display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+  .mod .star{font-size:.62rem;background:var(--gold);color:var(--ink);padding:2px 8px;border-radius:20px;font-weight:700;letter-spacing:.03em}
+  .mod .md{color:var(--muted);font-size:.86rem;margin-top:4px;line-height:1.4}
+  .mod .mtag{display:inline-block;margin-top:8px;font-size:.72rem;font-weight:600;color:var(--gold);background:rgba(245,179,1,.1);border:1px solid rgba(245,179,1,.25);padding:3px 9px;border-radius:20px}
+
+  /* services */
+  .tools{display:flex;flex-wrap:wrap;gap:10px;margin-top:30px}
+  .tool{background:var(--panel);border:1px solid var(--line);border-radius:999px;padding:8px 16px;font-size:.85rem;color:#DDD8CB}
+  .svc-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:34px}
+  .svc{display:flex;justify-content:space-between;align-items:center;background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:16px 20px}
+  .svc .sn{font-weight:600;font-size:.95rem}.svc .sn small{display:block;color:var(--muted);font-size:.78rem;font-weight:400;margin-top:2px}
+  .svc .sp{font-family:var(--disp);font-weight:700;color:var(--gold);white-space:nowrap;font-size:1rem}
+
+  .stack-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin-top:34px}
+  .stk{display:flex;gap:12px;align-items:center;background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:16px 18px}
+  .stk .tk{width:26px;height:26px;border-radius:50%;background:var(--gold);color:var(--ink);display:grid;place-items:center;font-weight:800;font-size:.85rem;flex-shrink:0}
+  .stk span{font-weight:500;font-size:.95rem}
+  .cert{margin-top:20px;background:linear-gradient(90deg,var(--panel-2),var(--panel));border:1px solid rgba(245,179,1,.35);border-radius:14px;padding:22px 24px;display:flex;align-items:center;gap:18px}
+  .cert .ic{font-size:2.4rem}.cert h3{font-family:var(--disp);font-weight:700;font-size:1.1rem;color:var(--gold)}.cert p{color:#C9C4B7;font-size:.9rem;margin-top:3px}
+
+  .road{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:38px}
+  .rc{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);padding:26px 22px;position:relative}
+  .rc .mo{font-family:var(--disp);font-weight:700;font-size:.78rem;letter-spacing:.05em;text-transform:uppercase;color:var(--gold)}
+  .rc h3{font-family:var(--display);font-size:1.35rem;text-transform:uppercase;margin:8px 0 8px;color:#fff}
+  .rc p{color:var(--muted);font-size:.92rem}
+  .rc .num{position:absolute;top:20px;right:22px;font-family:var(--display);font-size:2.4rem;color:rgba(245,179,1,.16)}
+
+  .offer{background:var(--panel);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+  .offer-card{max-width:560px;margin:0 auto;background:linear-gradient(180deg,var(--panel-2),var(--panel));border:1px solid rgba(245,179,1,.45);border-radius:20px;padding:34px 30px;text-align:center;box-shadow:0 0 60px -20px rgba(245,179,1,.4)}
+  .offer-card .badge{display:inline-block;font-family:var(--disp);font-weight:700;font-size:.74rem;letter-spacing:.06em;text-transform:uppercase;background:var(--gold);color:var(--ink);padding:6px 16px;border-radius:999px}
+  .offer-card .strike{font-size:1.3rem;color:var(--muted);text-decoration:line-through;margin-top:18px}
+  .offer-card .price{font-family:var(--display);font-size:3.6rem;color:var(--gold);line-height:1}.offer-card .price small{font-size:1.1rem;color:#fff}
+  .offer-card .emi{color:#C9C4B7;font-size:.92rem;margin-top:8px}
+  .countdown{display:flex;justify-content:center;gap:10px;margin:22px 0}
+  .cd{background:var(--ink);border:1px solid var(--line);border-radius:10px;padding:10px 14px;min-width:62px}
+  .cd .n{font-family:var(--display);font-size:1.6rem;color:#fff;line-height:1}.cd .u{font-size:.62rem;color:var(--muted);text-transform:uppercase;letter-spacing:.05em;margin-top:3px}
+  .offer-card .btn{width:100%;margin-top:6px}
+  .offer-card .seats{font-size:.8rem;color:var(--red);font-weight:600;margin-top:12px}
+
+  .who-row{display:flex;flex-wrap:wrap;gap:14px;margin-top:34px}
+  .wc{flex:1;min-width:180px;background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:20px 18px}
+  .wc .ic{font-size:1.4rem}.wc h3{font-family:var(--disp);font-weight:700;font-size:1rem;margin:8px 0 5px}.wc p{color:var(--muted);font-size:.86rem}
+
+  .testi .tquote{max-width:760px;margin-top:28px;background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);padding:32px}
+  .tquote p{font-family:var(--disp);font-weight:600;font-size:clamp(1.1rem,2.6vw,1.45rem);line-height:1.42;color:#fff}
+  .tquote .who{font-size:.84rem;color:var(--gold);font-weight:600;margin-top:16px}
+
+  .faq-list{margin-top:28px;max-width:800px}
+  details{border-bottom:1px solid var(--line);padding:18px 0}
+  summary{font-family:var(--disp);font-weight:700;font-size:1.05rem;cursor:pointer;list-style:none;display:flex;justify-content:space-between;gap:16px;align-items:center}
+  summary::-webkit-details-marker{display:none}
+  summary::after{content:"+";font-size:1.4rem;color:var(--gold);transition:.2s}
+  details[open] summary::after{transform:rotate(45deg)}
+  details p{color:var(--muted);margin-top:12px;font-size:.96rem}
+
+  .final{text-align:center;position:relative;overflow:hidden}
+  .final::before{content:"";position:absolute;width:600px;height:600px;left:50%;top:-260px;transform:translateX(-50%);background:radial-gradient(circle,rgba(245,179,1,.12),transparent 65%)}
+  .final .wrap{position:relative}
+  .final h2{font-family:var(--display);font-size:clamp(1.9rem,5vw,2.9rem);text-transform:uppercase;line-height:1.05}.final h2 .y{color:var(--gold)}
+  .final p{color:var(--muted);max-width:520px;margin:16px auto 0}
+  .final .btn{margin-top:26px}
+  .final .phone{font-family:var(--disp);font-weight:700;font-size:1.2rem;color:#fff;margin-top:18px}
+
+  footer{padding:30px 0;text-align:center;border-top:1px solid var(--line)}
+  footer .brand{justify-content:center;margin-bottom:8px}footer p{color:var(--muted);font-size:.82rem}
+
+  .mobile-cta{position:fixed;left:0;right:0;bottom:0;z-index:60;display:none;padding:10px 14px;background:rgba(10,10,11,.97);backdrop-filter:blur(10px);border-top:1px solid var(--line)}
+  .mobile-cta a{display:flex;align-items:center;justify-content:center;gap:8px;background:var(--gold);color:var(--ink);font-weight:700;padding:14px;border-radius:11px}
+
+  .reveal{opacity:0;transform:translateY(22px);transition:opacity .6s,transform .6s}.reveal.in{opacity:1;transform:none}
+  @media(max-width:900px){.hero-grid{grid-template-columns:1fr;gap:32px}.pgrid{grid-template-columns:1fr 1fr 1fr}.moat-grid{grid-template-columns:1fr}.mod-grid,.svc-grid{grid-template-columns:1fr}.road{grid-template-columns:1fr}.compare{grid-template-columns:1fr;gap:12px}.cvs{transform:rotate(90deg)}}
+  @media(max-width:600px){section{padding:46px 0}.top-cta{display:none}.mobile-cta{display:block}body{padding-bottom:74px}.pgrid{grid-template-columns:1fr 1fr}.stack-grid{grid-template-columns:1fr}}
+  @media(prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+
+<header class="topbar"><div class="wrap">
+  <a href="#" class="brand"><span class="logo">BM</span> Academy</a>
+  <a class="top-cta" href="#register">Register Free Webinar</a>
+</div></header>
+
+<!-- HERO -->
+<section class="hero"><div class="wrap hero-grid">
+  <div>
+    <span class="eyebrow"><span class="pulse"></span> AI Marketing Agency · Accelerator</span>
+    <h1>Build Your Own <span class="y">AI Marketing</span> Agency <span class="sm">in 90 Days</span></h1>
+    <p class="sub">Learn. Get Clients. Earn. <span class="g">Be Your Own Boss.</span></p>
+    <p class="subline">This isn't just a course — 12 modules, real projects, <b>mentorship till your first client</b>. Learn from the team that runs a real agency for 750+ businesses.</p>
+    <div class="cta-row">
+      <a class="btn btn-primary" href="#register">Register for Free Webinar →</a>
+      <a class="btn btn-ghost" href="#curriculum">See the 12 Modules</a>
+    </div>
+    <p class="webinar-line">🎥 Free Live Webinar · <b>Sat / Sun · 7:00 PM</b> · Online</p>
+    <div class="proof-row">
+      <span class="pill"><b>750+</b> businesses served</span>
+      <span class="pill"><b>1,400+</b> trained</span>
+      <span class="pill"><b>4.8★</b> Google</span>
+    </div>
+  </div>
+  <div class="hcard reveal">
+    <div class="tag">What you'll get</div>
+    <div class="partner">Everything to<br>launch + earn</div>
+    <ul>
+      <li><span class="tk">✓</span> 12-module agency curriculum</li>
+      <li><span class="tk">✓</span> AI Tools + Meta & Google Ads</li>
+      <li><span class="tk">✓</span> Real client projects</li>
+      <li><span class="tk">✓</span> First-client mentorship</li>
+      <li><span class="tk">✓</span> Agency setup & pricing support</li>
+      <li><span class="tk">✓</span> Certification + lifetime support</li>
+    </ul>
+    <div class="foot">12 weeks · 3 months · <b>1 transformation</b></div>
+  </div>
+</div></section>
+
+<!-- PILLARS -->
+<section class="pillars"><div class="wrap">
+  <div class="pgrid">
+    <div class="pil reveal"><div class="ic">🏠</div><h3>Build Your Agency</h3><p>From home</p></div>
+    <div class="pil reveal"><div class="ic">🤖</div><h3>Master AI Tools</h3><p>Work 10x faster</p></div>
+    <div class="pil reveal"><div class="ic">🎯</div><h3>Get First Client</h3><p>With mentorship</p></div>
+    <div class="pil reveal"><div class="ic">💰</div><h3>Earn Recurring</h3><p>Monthly retainers</p></div>
+    <div class="pil reveal"><div class="ic">📈</div><h3>Real Businesses</h3><p>In your city</p></div>
+  </div>
+</div></section>
+
+<!-- MOAT -->
+<section id="moat"><div class="wrap">
+  <span class="kicker">// the real difference</span>
+  <h2 class="h2">Other courses teach you skills. We guide you until your <span class="gold">first client</span>.</h2>
+  <p class="lead">The reason 90% of agencies fail — once the class ends, you're left on your own. Here it's different: mentorship till your first client, real projects, and a client-getting system.</p>
+  <div class="moat-grid">
+    <div class="moat-col bad reveal">
+      <h3>❌ Other "agency" courses</h3>
+      <ul>
+        <li><span class="m">✕</span> Skill kathukira, appram alone</li>
+        <li><span class="m">✕</span> "Clients-a neenga thedunga" — no help</li>
+        <li><span class="m">✕</span> Only theory, no real projects</li>
+        <li><span class="m">✕</span> First client varaadhu → give up</li>
+      </ul>
+    </div>
+    <div class="moat-col good reveal">
+      <h3>✅ BM Academy Accelerator</h3>
+      <ul>
+        <li><span class="m">✓</span> Mentorship till your first client</li>
+        <li><span class="m">✓</span> Client-getting scripts & system</li>
+        <li><span class="m">✓</span> Real client projects, not theory</li>
+        <li><span class="m">✓</span> Lifetime support & community</li>
+      </ul>
+    </div>
+  </div>
+</div></section>
+
+<!-- INCOME -->
+<section class="income"><div class="wrap">
+  <span class="kicker">// job vs ownership</span>
+  <h2 class="h2">A job has a ceiling. An agency doesn't.</h2>
+  <div class="compare">
+    <div class="cbox reveal"><div class="l">A digital job</div><div class="v">₹25k</div><div class="d">/ month · fixed ceiling · one salary</div></div>
+    <div class="cvs">VS</div>
+    <div class="cbox win reveal"><div class="l">Your agency</div><div class="v">No cap</div><div class="d">recurring retainers · scale with clients</div></div>
+  </div>
+  <div class="math reveal">Just <span class="g">3 clients</span> × ₹18,999/mo retainer = <span class="g">₹56,997 / month</span> recurring. Add ads, reels, websites → more.</div>
+</div></section>
+
+<!-- NO TEAM NO OFFICE -->
+<section><div class="wrap">
+  <span class="kicker">// the 2026 advantage</span>
+  <h2 class="h2">No team. No office. <span class="gold">No overhead.</span></h2>
+  <p class="lead">Waiting because you think an agency needs a team, an office, and lakhs in investment? That's 2015 thinking. In 2026, it's just you + AI — break-even from client #1.</p>
+  <div class="moat-grid">
+    <div class="moat-col bad reveal">
+      <h3>❌ Old-school agency / month</h3>
+      <div style="display:flex;justify-content:space-between;padding:11px 0;border-bottom:1px solid var(--line);font-size:.95rem"><span>Office rent</span><b style="color:#fff">₹15,000</b></div>
+      <div style="display:flex;justify-content:space-between;padding:11px 0;border-bottom:1px solid var(--line);font-size:.95rem"><span>3 staff salaries</span><b style="color:#fff">₹60,000</b></div>
+      <div style="display:flex;justify-content:space-between;padding:11px 0;border-bottom:1px solid var(--line);font-size:.95rem"><span>Tools & misc</span><b style="color:#fff">₹10,000</b></div>
+      <div style="margin-top:16px;font-family:var(--disp);font-weight:800;font-size:1.5rem;color:var(--red)">₹85,000 burn<span style="display:block;font-size:.8rem;font-weight:400;color:var(--muted);margin-top:2px">before 1 rupee profit · need ~5 clients to break even</span></div>
+    </div>
+    <div class="moat-col good reveal">
+      <h3>✅ Your solo AI agency / month</h3>
+      <div style="display:flex;justify-content:space-between;padding:11px 0;border-bottom:1px solid var(--line);font-size:.95rem"><span>Home / laptop</span><b style="color:var(--green)">₹0</b></div>
+      <div style="display:flex;justify-content:space-between;padding:11px 0;border-bottom:1px solid var(--line);font-size:.95rem"><span>You + AI (your team)</span><b style="color:var(--green)">₹0</b></div>
+      <div style="display:flex;justify-content:space-between;padding:11px 0;border-bottom:1px solid var(--line);font-size:.95rem"><span>Tools</span><b style="color:var(--green)">₹2–3k</b></div>
+      <div style="margin-top:16px;font-family:var(--disp);font-weight:800;font-size:1.5rem;color:var(--gold)">~₹16k profit<span style="display:block;font-size:.8rem;font-weight:400;color:var(--muted);margin-top:2px">from client #1, day one · break-even instantly</span></div>
+    </div>
+  </div>
+  <div class="math reveal" style="margin-top:26px">Instead of paying office rent — that money stays in your pocket. <span class="g">No employees, no payroll tension. AI is your team.</span></div>
+</div></section>
+
+<!-- CURRICULUM -->
+<section class="curric" id="curriculum"><div class="wrap">
+  <span class="kicker">// the curriculum · 12 modules</span>
+  <h2 class="h2">Every skill = a service you can sell.</h2>
+  <div class="mod-grid">
+    <div class="mod reveal"><div class="mn">01</div><div><div class="mt">Agency Foundations & Mindset</div><div class="md">Niche, positioning, how agencies make money.</div></div></div>
+    <div class="mod reveal"><div class="mn">02</div><div><div class="mt">AI Tools & Automation</div><div class="md">ChatGPT, Gemini + automation. Deliver 10x faster.</div><span class="mtag">→ AI-powered delivery</span></div></div>
+    <div class="mod reveal"><div class="mn">03</div><div><div class="mt">Social Media Management</div><div class="md">Calendars, growth, engagement for clients.</div><span class="mtag">→ Sell: SMM retainers</span></div></div>
+    <div class="mod reveal"><div class="mn">04</div><div><div class="mt">Meta Ads (FB & Instagram)</div><div class="md">Lead-gen & sales campaigns, scaling.</div><span class="mtag">→ Sell: Ad management</span></div></div>
+    <div class="mod reveal"><div class="mn">05</div><div><div class="mt">Google Ads & GMB</div><div class="md">Local search, Google Business Profile, Ads.</div><span class="mtag">→ Sell: Local visibility</span></div></div>
+    <div class="mod reveal"><div class="mn">06</div><div><div class="mt">SEO Essentials</div><div class="md">On-page & local SEO — rank on Google.</div><span class="mtag">→ Sell: SEO retainers</span></div></div>
+    <div class="mod reveal"><div class="mn">07</div><div><div class="mt">Content & Reels Creation</div><div class="md">Hooks, scripting, shoot & edit short-form.</div><span class="mtag">→ Sell: Content packages</span></div></div>
+    <div class="mod reveal"><div class="mn">08</div><div><div class="mt">Graphic Design (Canva)</div><div class="md">Creatives, ad designs, branding.</div><span class="mtag">→ Sell: Design & branding</span></div></div>
+    <div class="mod reveal"><div class="mn">09</div><div><div class="mt">Websites & Landing Pages</div><div class="md">WordPress + pages that convert.</div><span class="mtag">→ Sell: Website design</span></div></div>
+    <div class="mod reveal"><div class="mn">10</div><div><div class="mt">WhatsApp Marketing & CRM</div><div class="md">Automation, broadcasts, follow-up systems.</div><span class="mtag">→ Sell: WhatsApp marketing</span></div></div>
+    <div class="mod reveal"><div class="mn">11</div><div><div class="mt">Client Acquisition & Sales <span class="star">MOST IMPORTANT</span></div><div class="md">Find, pitch & close local businesses.</div><span class="mtag">→ Your first client lands here</span></div></div>
+    <div class="mod reveal"><div class="mn">12</div><div><div class="mt">Pricing, Proposals & Scaling</div><div class="md">Package, price for profit, build retainers.</div><span class="mtag">→ Scale to recurring income</span></div></div>
+  </div>
+</div></section>
+
+<!-- TOOLS + SERVICES -->
+<section><div class="wrap">
+  <span class="kicker">// tools you'll master</span>
+  <h2 class="h2">Industry tools, hands-on.</h2>
+  <div class="tools">
+    <span class="tool">ChatGPT</span><span class="tool">Gemini</span><span class="tool">Meta Ads Manager</span><span class="tool">Google Ads</span><span class="tool">Google Business Profile</span><span class="tool">Canva</span><span class="tool">WordPress</span><span class="tool">Elementor</span><span class="tool">WhatsApp Business</span><span class="tool">CapCut</span>
+  </div>
+  <span class="kicker" style="display:block;margin-top:40px">// services you'll sell — & what they pay</span>
+  <div class="svc-grid">
+    <div class="svc"><div class="sn">Social Media Management<small>content + growth</small></div><div class="sp">₹8k–15k/mo</div></div>
+    <div class="svc"><div class="sn">Meta Ads Management<small>lead-gen & sales</small></div><div class="sp">₹10k–20k/mo</div></div>
+    <div class="svc"><div class="sn">Google / GMB + SEO<small>local ranking</small></div><div class="sp">₹5k–15k/mo</div></div>
+    <div class="svc"><div class="sn">Content & Reels<small>video packages</small></div><div class="sp">₹5k–15k/mo</div></div>
+    <div class="svc"><div class="sn">Website Design<small>one-time build</small></div><div class="sp">₹8k–25k</div></div>
+    <div class="svc"><div class="sn">Full Marketing Retainer<small>bundle</small></div><div class="sp">₹18k–29k/mo</div></div>
+  </div>
+</div></section>
+
+<!-- BONUS + CERT -->
+<section><div class="wrap">
+  <span class="kicker">// bonuses included</span>
+  <h2 class="h2">Everything to start earning.</h2>
+  <div class="stack-grid">
+    <div class="stk reveal"><span class="tk">★</span><span>50+ client proposal & pricing templates</span></div>
+    <div class="stk reveal"><span class="tk">★</span><span>WhatsApp + call sales scripts</span></div>
+    <div class="stk reveal"><span class="tk">★</span><span>AI prompt library for agencies</span></div>
+    <div class="stk reveal"><span class="tk">★</span><span>100+ ready Canva templates</span></div>
+    <div class="stk reveal"><span class="tk">★</span><span>Lifetime mentorship & community</span></div>
+    <div class="stk reveal"><span class="tk">★</span><span>Doubt-clearing support</span></div>
+  </div>
+  <div class="cert reveal">
+    <div class="ic">🏆</div>
+    <div><h3>AI Marketing Agency Certification</h3><p>Certified by BM Academy (Part of ABM Groups) — proof for your first clients.</p></div>
+  </div>
+</div></section>
+
+<!-- ROADMAP -->
+<section><div class="wrap">
+  <span class="kicker">// 3 months · 12 weeks · 1 transformation</span>
+  <h2 class="h2">From foundation to your first client.</h2>
+  <div class="road">
+    <div class="rc reveal"><div class="num">01</div><div class="mo">Month 1</div><h3>Foundation</h3><p>Master AI tools, Meta + Google Ads, social & local marketing.</p></div>
+    <div class="rc reveal"><div class="num">02</div><div class="mo">Month 2</div><h3>Real Practice</h3><p>Package, pitch & run real campaigns. Fully hands-on.</p></div>
+    <div class="rc reveal"><div class="num">03</div><div class="mo">Month 3</div><h3>First Client & Scale</h3><p>Land your first client with mentorship. Income start.</p></div>
+  </div>
+</div></section>
+
+<!-- OFFER -->
+<section class="offer" id="register"><div class="wrap">
+  <span class="kicker" style="text-align:center;display:block">// free webinar → exclusive offer</span>
+  <h2 class="h2" style="text-align:center;margin:12px auto 34px">Register for the free live webinar.</h2>
+  <div class="offer-card reveal">
+    <span class="badge">🎥 Webinar Offer · 48 hours only</span>
+    <div class="strike">₹29,999</div>
+    <div class="price">₹24,999<small> +GST</small></div>
+    <div class="emi">EMI available · from ₹5,000 / month</div>
+    <div class="countdown" id="cd">
+      <div class="cd"><div class="n" id="h">47</div><div class="u">Hrs</div></div>
+      <div class="cd"><div class="n" id="m">59</div><div class="u">Min</div></div>
+      <div class="cd"><div class="n" id="s">59</div><div class="u">Sec</div></div>
+    </div>
+    <a class="btn btn-primary" id="regBtn" href="#">Register for Free Webinar →</a>
+    <div class="seats">⚠ Limited seats per batch · Sat/Sun 7 PM</div>
+  </div>
+  <p style="text-align:center;color:var(--muted);font-size:.86rem;margin-top:18px">The ₹24,999 price is unlocked for webinar attendees only. Register → attend → decide.</p>
+</div></section>
+
+<!-- WHO -->
+<section><div class="wrap">
+  <span class="kicker">// who is this for</span>
+  <h2 class="h2">Who is this for?</h2>
+  <div class="who-row">
+    <div class="wc reveal"><div class="ic">💼</div><h3>Job-tired freshers</h3><p>No salary ceiling — build your own business instead.</p></div>
+    <div class="wc reveal"><div class="ic">🧑‍💻</div><h3>Freelancers</h3><p>Already doing a bit of it — need to scale it up.</p></div>
+    <div class="wc reveal"><div class="ic">🎓</div><h3>Marketing grads</h3><p>You have the skills — you need clients + a system.</p></div>
+    <div class="wc reveal"><div class="ic">🚀</div><h3>Side-income seekers</h3><p>Build extra recurring income on the side.</p></div>
+  </div>
+</div></section>
+
+<!-- TESTIMONIAL -->
+<section class="testi"><div class="wrap">
+  <span class="kicker">// real story</span>
+  <div class="tquote reveal"><p>"I was freelancing a bit, but didn't know how to scale, and my clients weren't consistent. After landing my first client with mentorship, I now handle 4 retainer clients a month."</p><div class="who">— Agency Accelerator alumni · Pondicherry</div></div>
+</div></section>
+
+<!-- FAQ -->
+<section><div class="wrap">
+  <span class="kicker">// doubts.clear()</span>
+  <h2 class="h2">Common kelvigal.</h2>
+  <div class="faq-list">
+    <details><summary>I have no experience. Can I still start an agency?</summary><p>Yes. Module 1 starts from scratch. You'll learn AI tools + ads + local marketing fully, step by step.</p></details>
+    <details><summary>Where do I find clients? That's my main doubt.</summary><p>Module 11 is entirely about client-getting. With mentorship, scripts, and a system, we help you land your first client. You won't be searching alone.</p></details>
+    <details><summary>Do I need this for a job or for a business?</summary><p>Both. With these same skills, you can build an agency or land a high-paying job.</p></details>
+    <details><summary>How much time commitment is needed?</summary><p>12 weeks, weekend-friendly. You can balance it alongside your job or college.</p></details>
+    <details><summary>₹24,999 — is EMI available?</summary><p>Yes, EMI from ₹5,000/mo. Webinar offer valid for 48 hours only.</p></details>
+  </div>
+</div></section>
+
+<!-- FINAL -->
+<section class="final"><div class="wrap">
+  <h2>Many people take a job.<br>Few become an <span class="y">Owner</span>.</h2>
+  <p>See the exact plan in the free webinar. Register and start your agency journey today.</p>
+  <a class="btn btn-primary" href="#register">Register for Free Webinar →</a>
+  <div class="phone">📞 94038 92971</div>
+</div></section>
+
+<footer><div class="wrap">
+  <div class="brand" style="display:inline-flex"><span class="logo">BM</span> Academy</div>
+  <p>Learn with Kamar | BM Academy · Pondicherry, TN · Part of ABM Groups<br>📞 94038 92971 · @growwithkamar</p>
+</div></footer>
+
+<div class="mobile-cta"><a href="#register">🎥 Register Free Webinar</a></div>
+
+<script>
+  var WA_NUMBER="919403892971";
+  function register(){
+    var msg="Hi BM Academy 👋\n\nI'd like to register for the Agency Accelerator FREE webinar.";
+    msg+="\n\n🎥 Program: Agency Accelerator (Build Your AI Marketing Agency)";
+    msg+="\n📅 Webinar: Sat/Sun 7 PM";
+    msg+="\n\nEnaku webinar slot + details anuppunga 🙏";
+    window.open("https://wa.me/"+WA_NUMBER+"?text="+encodeURIComponent(msg),"_blank");
+  }
+  document.getElementById("regBtn").addEventListener("click",function(e){e.preventDefault();register();});
+  var io=new IntersectionObserver(function(es){es.forEach(function(en){if(en.isIntersecting){en.target.classList.add("in");io.unobserve(en.target);}});},{threshold:.14});
+  document.querySelectorAll(".reveal").forEach(function(el){io.observe(el);});
+  var end=Date.now()+48*3600*1000;
+  var h=document.getElementById("h"),m=document.getElementById("m"),s=document.getElementById("s");
+  function tick(){var d=Math.max(0,end-Date.now()),t=Math.floor(d/1000);var hh=Math.floor(t/3600),mm=Math.floor((t%3600)/60),ss=t%60;if(h){h.textContent=String(hh).padStart(2,"0");m.textContent=String(mm).padStart(2,"0");s.textContent=String(ss).padStart(2,"0");}}
+  tick();setInterval(tick,1000);
+</script>
+</body>
+</html>

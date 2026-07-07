@@ -1,0 +1,169 @@
+:root{
+  --bg:#0A0A0B;--panel:#141412;--panel-2:#1C1B17;--line:rgba(255,255,255,.09);
+  --gold:#F5B301;--gold-2:#FFCA28;--gold-d:#D99700;--ink:#0A0A0B;
+  --text:#F4F1E9;--muted:#9A968C;--green:#4ADE80;--red:#FF5A4D;
+  --radius:16px;--maxw:1100px;
+  --display:'Anton',sans-serif;--disp:'Sora',sans-serif;--body:'Inter','Noto Sans Tamil',sans-serif;--tam:'Noto Sans Tamil','Inter',sans-serif;
+}
+.aimarketing-page * {box-sizing:border-box;margin:0;padding:0}
+.aimarketing-page {
+  font-family:var(--body);
+  background:var(--bg);
+  color:var(--text);
+  line-height:1.55;
+  -webkit-font-smoothing:antialiased;
+  scroll-behavior:smooth;
+}
+.aimarketing-page a{text-decoration:none;color:inherit}
+.aimarketing-page .wrap{max-width:var(--maxw);margin:0 auto;padding:0 20px}
+.aimarketing-page .tam{font-family:var(--tam)}.aimarketing-page .gold{color:var(--gold)}
+
+.aimarketing-page .topbar{position:sticky;top:0;z-index:50;background:rgba(10,10,11,.94);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.aimarketing-page .topbar .wrap{display:flex;align-items:center;justify-content:space-between;height:62px}
+.aimarketing-page .brand{font-family:var(--disp);font-weight:800;font-size:1.05rem;color:#fff;display:flex;align-items:center;gap:8px}
+.aimarketing-page .brand .logo{width:30px;height:30px;border-radius:7px;background:var(--gold);color:var(--ink);display:grid;place-items:center;font-family:var(--display);font-size:.9rem}
+.aimarketing-page .top-cta{display:inline-flex;gap:8px;background:var(--gold);color:var(--ink);font-weight:700;font-size:.84rem;padding:10px 18px;border-radius:10px;transition:.2s}
+.aimarketing-page .top-cta:hover{background:var(--gold-d);transform:translateY(-1px)}
+
+.aimarketing-page .hero{padding:52px 0 46px;position:relative;overflow:hidden}
+.aimarketing-page .hero::before{content:"";position:absolute;width:600px;height:600px;right:-220px;top:-160px;border-radius:50%;background:radial-gradient(circle,rgba(245,179,1,.14),transparent 68%);pointer-events:none}
+.aimarketing-page .hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:40px;align-items:center;position:relative}
+.aimarketing-page .eyebrow{display:inline-flex;align-items:center;gap:9px;font-family:var(--disp);font-size:.74rem;font-weight:700;letter-spacing:.05em;text-transform:uppercase;color:var(--gold);border:1px solid rgba(245,179,1,.3);background:rgba(245,179,1,.07);padding:7px 14px;border-radius:999px}
+.aimarketing-page .eyebrow .pulse{width:7px;height:7px;border-radius:50%;background:var(--green);box-shadow:0 0 0 4px rgba(74,222,128,.2)}
+.aimarketing-page h1{font-family:var(--display);font-weight:400;font-size:clamp(2.6rem,7.5vw,4.6rem);line-height:.96;text-transform:uppercase}
+.aimarketing-page h1 .y{color:var(--gold);display:block}
+.aimarketing-page h1 .sm{font-size:.55em}
+.aimarketing-page .sub{font-family:var(--disp);font-weight:600;font-size:clamp(1.05rem,2.6vw,1.35rem);margin:18px 0 6px;color:#fff}
+.aimarketing-page .sub .g{color:var(--gold)}
+.aimarketing-page .subline{color:#C9C4B7;font-size:1rem;margin-bottom:26px;max-width:540px}.aimarketing-page .subline b{color:#fff}
+.aimarketing-page .cta-row{display:flex;flex-wrap:wrap;gap:13px;align-items:center}
+.aimarketing-page .btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;font-weight:700;font-size:1rem;padding:15px 26px;border-radius:12px;cursor:pointer;border:none;transition:.2s;font-family:var(--body)}
+.aimarketing-page .btn-primary{background:var(--gold);color:var(--ink);box-shadow:0 14px 34px -12px rgba(245,179,1,.55)}
+.aimarketing-page .btn-primary:hover{background:var(--gold-d);transform:translateY(-2px)}
+.aimarketing-page .btn-ghost{background:transparent;color:#fff;border:1px solid var(--line)}.aimarketing-page .btn-ghost:hover{border-color:var(--gold);color:var(--gold)}
+.aimarketing-page .webinar-line{display:flex;align-items:center;gap:8px;font-size:.86rem;color:var(--muted);margin-top:15px}.aimarketing-page .webinar-line b{color:#fff}
+.aimarketing-page .proof-row{display:flex;flex-wrap:wrap;gap:10px;margin-top:26px}
+.aimarketing-page .pill{background:var(--panel);border:1px solid var(--line);border-radius:999px;padding:8px 15px;font-size:.82rem;color:#C9C4B7}.aimarketing-page .pill b{color:#fff;font-family:var(--disp)}
+
+.aimarketing-page .hcard{background:linear-gradient(180deg,var(--panel),var(--panel-2));border:1px solid var(--line);border-radius:20px;padding:26px;box-shadow:0 30px 70px -30px rgba(0,0,0,.8);position:relative;overflow:hidden}
+.aimarketing-page .hcard::before{content:"";position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--gold),transparent)}
+.aimarketing-page .hcard .tag{font-family:var(--disp);font-weight:700;font-size:.72rem;letter-spacing:.05em;text-transform:uppercase;color:var(--gold)}
+.aimarketing-page .hcard .partner{font-family:var(--display);font-size:1.5rem;color:#fff;text-transform:uppercase;margin:8px 0 14px;line-height:1.05}
+.aimarketing-page .hcard ul{list-style:none;display:grid;gap:10px}
+.aimarketing-page .hcard li{display:flex;gap:10px;font-size:.92rem;color:#DDD8CB}.aimarketing-page .hcard li .tk{color:var(--gold);font-weight:700;flex-shrink:0}
+.aimarketing-page .hcard .foot{margin-top:16px;padding-top:16px;border-top:1px solid var(--line);font-size:.8rem;color:var(--muted)}.aimarketing-page .hcard .foot b{color:var(--gold)}
+
+.aimarketing-page section{padding:60px 0}
+.aimarketing-page .kicker{font-family:var(--disp);font-size:.78rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--gold)}
+.aimarketing-page .h2{font-family:var(--disp);font-weight:800;font-size:clamp(1.7rem,4.6vw,2.5rem);line-height:1.12;letter-spacing:-.02em;margin:12px 0 0}
+.aimarketing-page .lead{color:var(--muted);font-size:1.05rem;margin-top:14px;max-width:640px}
+
+.aimarketing-page .pillars{background:var(--panel);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.aimarketing-page .pgrid{display:grid;grid-template-columns:repeat(5,1fr);gap:14px}
+.aimarketing-page .pil{text-align:center;padding:10px}
+.aimarketing-page .pil .ic{width:54px;height:54px;margin:0 auto 12px;border-radius:14px;background:var(--panel-2);border:1px solid var(--line);display:grid;place-items:center;font-size:1.4rem}
+.aimarketing-page .pil h3{font-family:var(--disp);font-weight:700;font-size:.95rem;line-height:1.2}
+.aimarketing-page .pil p{color:var(--muted);font-size:.8rem;margin-top:5px}
+
+.aimarketing-page .moat-grid{display:grid;grid-template-columns:1fr 1fr;gap:22px;margin-top:38px}
+.aimarketing-page .moat-col{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);padding:28px 26px}
+.aimarketing-page .moat-col h3{font-family:var(--disp);font-weight:700;font-size:1.15rem;margin-bottom:16px}
+.aimarketing-page .moat-col.bad h3{color:var(--muted)}.aimarketing-page .moat-col.good{border-color:rgba(245,179,1,.4);box-shadow:0 0 0 1px rgba(245,179,1,.2)}.aimarketing-page .moat-col.good h3{color:var(--gold)}
+.aimarketing-page .moat-col ul{list-style:none;display:grid;gap:12px}
+.aimarketing-page .moat-col li{display:flex;gap:10px;font-size:.95rem;color:#DDD8CB}.aimarketing-page .moat-col.bad li{color:var(--muted)}
+.aimarketing-page .moat-col li .m{flex-shrink:0;font-weight:700}.aimarketing-page .moat-col.bad li .m{color:var(--red)}.aimarketing-page .moat-col.good li .m{color:var(--green)}
+
+.aimarketing-page .income{background:linear-gradient(180deg,transparent,rgba(245,179,1,.04))}
+.aimarketing-page .compare{display:grid;grid-template-columns:1fr auto 1fr;gap:20px;align-items:center;margin-top:36px}
+.aimarketing-page .cbox{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);padding:28px 24px;text-align:center}
+.aimarketing-page .cbox.win{border-color:var(--gold);box-shadow:0 0 0 1px var(--gold)}
+.aimarketing-page .cbox .l{font-family:var(--disp);font-size:.8rem;text-transform:uppercase;letter-spacing:.04em;color:var(--muted)}
+.aimarketing-page .cbox .v{font-family:var(--display);font-size:2.4rem;color:#fff;margin:8px 0 4px}.aimarketing-page .cbox.win .v{color:var(--gold)}
+.aimarketing-page .cbox .d{font-size:.86rem;color:var(--muted)}
+.aimarketing-page .cvs{font-family:var(--display);font-size:1.4rem;color:var(--muted)}
+.aimarketing-page .math{margin-top:22px;background:var(--panel);border:1px dashed rgba(245,179,1,.4);border-radius:14px;padding:18px 20px;text-align:center;font-family:var(--disp);font-weight:600;color:#fff}.aimarketing-page .math .g{color:var(--gold)}
+
+/* curriculum */
+.aimarketing-page .curric{background:var(--panel);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.aimarketing-page .mod-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:36px}
+.aimarketing-page .mod{background:var(--bg);border:1px solid var(--line);border-radius:14px;padding:20px 22px;display:flex;gap:16px;align-items:flex-start}
+.aimarketing-page .mod .mn{font-family:var(--display);font-size:1.6rem;color:rgba(245,179,1,.55);line-height:1;min-width:34px}
+.aimarketing-page .mod .mt{font-family:var(--disp);font-weight:700;font-size:1.02rem;display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.aimarketing-page .mod .star{font-size:.62rem;background:var(--gold);color:var(--ink);padding:2px 8px;border-radius:20px;font-weight:700;letter-spacing:.03em}
+.aimarketing-page .mod .md{color:var(--muted);font-size:.86rem;margin-top:4px;line-height:1.4}
+.aimarketing-page .mod .mtag{display:inline-block;margin-top:8px;font-size:.72rem;font-weight:600;color:var(--gold);background:rgba(245,179,1,.1);border:1px solid rgba(245,179,1,.25);padding:3px 9px;border-radius:20px}
+
+/* services */
+.aimarketing-page .tools{display:flex;flex-wrap:wrap;gap:10px;margin-top:30px}
+.aimarketing-page .tool{background:var(--panel);border:1px solid var(--line);border-radius:999px;padding:8px 16px;font-size:.85rem;color:#DDD8CB}
+.aimarketing-page .svc-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:34px}
+.aimarketing-page .svc{display:flex;justify-content:space-between;align-items:center;background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:16px 20px}
+.aimarketing-page .svc .sn{font-weight:600;font-size:.95rem}.aimarketing-page .svc .sn small{display:block;color:var(--muted);font-size:.78rem;font-weight:400;margin-top:2px}
+.aimarketing-page .svc .sp{font-family:var(--disp);font-weight:700;color:var(--gold);white-space:nowrap;font-size:1rem}
+
+.aimarketing-page .stack-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin-top:34px}
+.aimarketing-page .stk{display:flex;gap:12px;align-items:center;background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:16px 18px}
+.aimarketing-page .stk .tk{width:26px;height:26px;border-radius:50%;background:var(--gold);color:var(--ink);display:grid;place-items:center;font-weight:800;font-size:.85rem;flex-shrink:0}
+.aimarketing-page .stk span{font-weight:500;font-size:.95rem}
+.aimarketing-page .cert{margin-top:20px;background:linear-gradient(90deg,var(--panel-2),var(--panel));border:1px solid rgba(245,179,1,.35);border-radius:14px;padding:22px 24px;display:flex;align-items:center;gap:18px}
+.aimarketing-page .cert .ic{font-size:2.4rem}.aimarketing-page .cert h3{font-family:var(--disp);font-weight:700;font-size:1.1rem;color:var(--gold)}.aimarketing-page .cert p{color:#C9C4B7;font-size:.9rem;margin-top:3px}
+
+.aimarketing-page .road{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:38px}
+.aimarketing-page .rc{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);padding:26px 22px;position:relative}
+.aimarketing-page .rc .mo{font-family:var(--disp);font-weight:700;font-size:.78rem;letter-spacing:.05em;text-transform:uppercase;color:var(--gold)}
+.aimarketing-page .rc h3{font-family:var(--display);font-size:1.35rem;text-transform:uppercase;margin:8px 0 8px;color:#fff}
+.aimarketing-page .rc p{color:var(--muted);font-size:.92rem}
+.aimarketing-page .rc .num{position:absolute;top:20px;right:22px;font-family:var(--display);font-size:2.4rem;color:rgba(245,179,1,.16)}
+
+.aimarketing-page .offer{background:var(--panel);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.aimarketing-page .offer-card{max-width:560px;margin:0 auto;background:linear-gradient(180deg,var(--panel-2),var(--panel));border:1px solid rgba(245,179,1,.45);border-radius:20px;padding:34px 30px;text-align:center;box-shadow:0 0 60px -20px rgba(245,179,1,.4)}
+.aimarketing-page .offer-card .badge{display:inline-block;font-family:var(--disp);font-weight:700;font-size:.74rem;letter-spacing:.06em;text-transform:uppercase;background:var(--gold);color:var(--ink);padding:6px 16px;border-radius:999px}
+.aimarketing-page .offer-card .strike{font-size:1.3rem;color:var(--muted);text-decoration:line-through;margin-top:18px}
+.aimarketing-page .offer-card .price{font-family:var(--display);font-size:3.6rem;color:var(--gold);line-height:1}.aimarketing-page .offer-card .price small{font-size:1.1rem;color:#fff}
+.aimarketing-page .offer-card .emi{color:#C9C4B7;font-size:.92rem;margin-top:8px}
+.aimarketing-page .countdown{display:flex;justify-content:center;gap:10px;margin:22px 0}
+.aimarketing-page .cd{background:var(--ink);border:1px solid var(--line);border-radius:10px;padding:10px 14px;min-width:62px}
+.aimarketing-page .cd .n{font-family:var(--display);font-size:1.6rem;color:#fff;line-height:1}.aimarketing-page .cd .u{font-size:.62rem;color:var(--muted);text-transform:uppercase;letter-spacing:.05em;margin-top:3px}
+.aimarketing-page .offer-card .btn{width:100%;margin-top:6px}
+.aimarketing-page .offer-card .seats{font-size:.8rem;color:var(--red);font-weight:600;margin-top:12px}
+
+.aimarketing-page .who-row{display:flex;flex-wrap:wrap;gap:14px;margin-top:34px}
+.aimarketing-page .wc{flex:1;min-width:180px;background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:20px 18px}
+.aimarketing-page .wc .ic{font-size:1.4rem}.aimarketing-page .wc h3{font-family:var(--disp);font-weight:700;font-size:1rem;margin:8px 0 5px}.aimarketing-page .wc p{color:var(--muted);font-size:.86rem}
+
+.aimarketing-page .testi .tquote{max-width:760px;margin-top:28px;background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);padding:32px}
+.aimarketing-page .tquote p{font-family:var(--disp);font-weight:600;font-size:clamp(1.1rem,2.6vw,1.45rem);line-height:1.42;color:#fff}
+.aimarketing-page .tquote .who{font-size:.84rem;color:var(--gold);font-weight:600;margin-top:16px}
+
+.aimarketing-page .faq-list{margin-top:28px;max-width:800px}
+.aimarketing-page details{border-bottom:1px solid var(--line);padding:18px 0}
+.aimarketing-page summary{font-family:var(--disp);font-weight:700;font-size:1.05rem;cursor:pointer;list-style:none;display:flex;justify-content:space-between;gap:16px;align-items:center}
+.aimarketing-page summary::-webkit-details-marker{display:none}
+.aimarketing-page summary::after{content:"+";font-size:1.4rem;color:var(--gold);transition:.2s}
+.aimarketing-page details[open] summary::after{transform:rotate(45deg)}
+.aimarketing-page details p{color:var(--muted);margin-top:12px;font-size:.96rem}
+
+.aimarketing-page .final{text-align:center;position:relative;overflow:hidden}
+.aimarketing-page .final::before{content:"";position:absolute;width:600px;height:600px;left:50%;top:-260px;transform:translateX(-50%);background:radial-gradient(circle,rgba(245,179,1,.12),transparent 65%)}
+.aimarketing-page .final .wrap{position:relative}
+.aimarketing-page .final h2{font-family:var(--display);font-size:clamp(1.9rem,5vw,2.9rem);text-transform:uppercase;line-height:1.05}.aimarketing-page .final h2 .y{color:var(--gold)}
+.aimarketing-page .final p{color:var(--muted);max-width:520px;margin:16px auto 0}
+.aimarketing-page .final .btn{margin-top:26px}
+.aimarketing-page .final .phone{font-family:var(--disp);font-weight:700;font-size:1.2rem;color:#fff;margin-top:18px}
+
+.aimarketing-page footer{padding:30px 0;text-align:center;border-top:1px solid var(--line)}
+.aimarketing-page footer .brand{justify-content:center;margin-bottom:8px}.aimarketing-page footer p{color:var(--muted);font-size:.82rem}
+
+.aimarketing-page .mobile-cta{position:fixed;left:0;right:0;bottom:0;z-index:60;display:none;padding:10px 14px;background:rgba(10,10,11,.97);backdrop-filter:blur(10px);border-top:1px solid var(--line)}
+.aimarketing-page .mobile-cta a{display:flex;align-items:center;justify-content:center;gap:8px;background:var(--gold);color:var(--ink);font-weight:700;padding:14px;border-radius:11px}
+
+.aimarketing-page .reveal{opacity:0;transform:translateY(22px);transition:opacity .6s,transform .6s}.aimarketing-page .reveal.in{opacity:1;transform:none}
+@media(max-width:900px){.aimarketing-page .hero-grid{grid-template-columns:1fr;gap:32px}.aimarketing-page .pgrid{grid-template-columns:1fr 1fr 1fr}.aimarketing-page .moat-grid{grid-template-columns:1fr}.aimarketing-page .mod-grid,.aimarketing-page .svc-grid{grid-template-columns:1fr}.aimarketing-page .road{grid-template-columns:1fr}.aimarketing-page .compare{grid-template-columns:1fr;gap:12px}.aimarketing-page .cvs{transform:rotate(90deg)}}
+@media(max-width:600px){.aimarketing-page section{padding:46px 0}.aimarketing-page .top-cta{display:none}.aimarketing-page .mobile-cta{display:block}.aimarketing-page{padding-bottom:74px}.aimarketing-page .pgrid{grid-template-columns:1fr 1fr}.aimarketing-page .stack-grid{grid-template-columns:1fr}}
+@media(prefers-reduced-motion:reduce){.aimarketing-page .reveal{opacity:1;transform:none;transition:none}.aimarketing-page{scroll-behavior:auto}}
+
+/* Webinar Form */
+.aimarketing-page .wform { position: relative; background: var(--panel); border: 1px solid var(--line); border-radius: 20px; padding: 34px 28px; text-align: left; }
+.aimarketing-page .wform-input { width: 100%; padding: 16px 18px; border: 1px solid var(--line); border-radius: 12px; background: var(--panel-2); color: #fff; font-family: var(--body); font-size: 0.95rem; outline: none; transition: 0.2s; }
+.aimarketing-page .wform-input:focus { border-color: var(--gold); box-shadow: 0 0 0 1px var(--gold); }
+.aimarketing-page .wform-grid { display: grid; gap: 18px; }

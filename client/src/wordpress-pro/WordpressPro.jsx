@@ -18,16 +18,23 @@ import Footer from './Footer';
 import MobileCTA from './MobileCTA';
 import MapSection from './MapSection';
 import FloatingWhatsApp from '../digital-marketing/FloatingWhatsApp';
+import WebinarSection from './WebinarSection';
+import WebinarForm from './WebinarForm';
+import SampleCertificate from './SampleCertificate';
 
 export default function WordpressPro() {
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const [isWebinarModalOpen, setIsWebinarModalOpen] = useState(false);
+
+  const openWebinarModal = () => setIsWebinarModalOpen(true);
+  const closeWebinarModal = () => setIsWebinarModalOpen(false);
 
   useEffect(() => {
     // Set document meta
-    document.title = "WordPress Website Building Course in Pondicherry | No Coding — BM Academy";
+    document.title = "Learn WordPress Website Development | Free Webinar";
     const metaDescription = document.querySelector('meta[name="description"]');
     if (metaDescription) {
-      metaDescription.setAttribute('content', 'Learn to build professional WordPress websites in 8 weeks — no coding required. Charge ₹15,000–₹25,000 per client project. Free 1:1 demo at BM Academy, Kottakuppam, Pondicherry.');
+      metaDescription.setAttribute('content', "Attend BM Academy's Free Live WordPress Webinar in Pondicherry to learn website design, Elementor, WooCommerce, plugins, SEO, and real-world website development.");
     }
 
     // Meta Pixel and Google Analytics PageView Tracking
@@ -66,24 +73,26 @@ export default function WordpressPro() {
 
   return (
     <div className="min-h-screen bg-bg-dark text-text-brand pb-[74px] sm:pb-0 relative font-inter">
-      <Header onBookClick={openModal} />
+      <Header onBookClick={openWebinarModal} />
       <Trustbar />
-      <Hero onBookClick={openModal} />
+      <Hero onBookClick={openWebinarModal} />
       <Fears />
       <Skills />
       <About />
-      <Guarantee />
-      <Tracks onBookClick={openModal} />
-      <Certificate />
-      <LiveStatus />
+      <WebinarSection onBookClick={openWebinarModal} />
       <Transformation />
+      <SampleCertificate />
+      <Tracks onBookClick={openModal} />
+      <Guarantee />
+      <Certificate />
+      {/* <LiveStatus /> */}
       <Testimonials />
       <FAQ />
       <BookDemo isModal={false} />
-      <FinalCTA onBookClick={openModal} />
-      <MapSection />
-      <Footer />
-      <MobileCTA onBookClick={openModal} />
+      <FinalCTA onBookClick={openWebinarModal} />
+      {/* <MapSection /> */}
+      <Footer onBookClick={openModal} />
+      <MobileCTA onBookClick={openWebinarModal} />
 
       {/* Booking Modal Overlay */}
       {isModalOpen && (
@@ -91,6 +100,17 @@ export default function WordpressPro() {
           <div className="relative w-full max-w-[560px] select-none">
             <div className="max-h-[90vh] overflow-y-auto rounded-2xl bg-panel border border-white/20">
               <BookDemo isModal={true} onClose={closeModal} />
+            </div>
+          </div>
+        </div>
+      )}
+
+      {/* Webinar Modal Overlay */}
+      {isWebinarModalOpen && (
+        <div className="fixed inset-0 z-55 bg-black/80 backdrop-blur-sm flex items-center justify-center p-4">
+          <div className="relative w-full max-w-[560px] select-none">
+            <div className="max-h-[90vh] overflow-y-auto rounded-2xl bg-panel border border-white/20">
+              <WebinarForm isModal={true} onClose={closeWebinarModal} />
             </div>
           </div>
         </div>

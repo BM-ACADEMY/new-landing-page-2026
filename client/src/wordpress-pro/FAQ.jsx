@@ -23,14 +23,14 @@ export default function FAQ() {
   ];
 
   return (
-    <section className="py-[58px] bg-bg-dark">
-      <div className="max-w-[780px] mx-auto px-5">
-        <span className="text-[0.78rem] font-bold tracking-[0.06em] uppercase text-pink-brand block text-center mb-2">// doubts, cleared</span>
-        <h2 className="font-sora font-extrabold text-[1.5rem] sm:text-[2.2rem] leading-[1.14] tracking-[-0.02em] text-center text-white mb-9">
+    <section id="faq" className="py-[58px] bg-bg-dark">
+      <div className="max-w-[1080px] mx-auto px-5">
+        <span className="text-[0.78rem] font-bold tracking-[0.06em] uppercase text-pink-brand block mb-2">// doubts, cleared</span>
+        <h2 className="font-sora font-extrabold text-[1.5rem] sm:text-[2.2rem] leading-[1.14] tracking-[-0.02em] text-white mt-3 mb-0">
           Frequently asked questions
         </h2>
 
-        <div className="border-t border-white/9">
+        <div className="mt-7 max-w-[780px] text-left">
           {faqs.map((faq, idx) => {
             const isOpen = openIdx === idx;
             return (

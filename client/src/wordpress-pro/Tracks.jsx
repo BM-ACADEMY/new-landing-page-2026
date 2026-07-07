@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 
-export default function Tracks() {
+export default function Tracks({ onBookClick }) {
   const containerRef = useRef(null);
 
   useEffect(() => {
@@ -25,14 +25,8 @@ export default function Tracks() {
     };
   }, []);
 
-  const openWhatsApp = () => {
-    const waNumber = "919944940051";
-    const msg = `Hi BM Academy 👋\n\nI'd like to book a free 1:1 demo.\n\n📚 Program: WordPress Pro\n\nPlease confirm a slot. Thank you 🙏`;
-    window.open(`https://wa.me/${waNumber}?text=${encodeURIComponent(msg)}`, "_blank");
-  };
-
   return (
-    <section className="py-[58px] bg-bg-dark">
+    <section id="tracks" className="py-[58px] bg-bg-dark">
       <div className="max-w-[1080px] mx-auto px-5" ref={containerRef}>
         <span className="text-[0.78rem] font-bold tracking-[0.06em] uppercase text-pink-brand block text-center mb-2">// choose your track</span>
         <h2 className="font-sora font-extrabold text-[1.5rem] sm:text-[2.2rem] leading-[1.14] tracking-[-0.02em] text-center text-white mb-9 reveal">
@@ -57,7 +51,7 @@ export default function Tracks() {
               </ul>
             </div>
             <button 
-              onClick={openWhatsApp}
+              onClick={onBookClick}
               className="w-full inline-flex items-center justify-center gap-2.5 font-bold text-base px-6 py-3.5 rounded-xl cursor-pointer border-none bg-gradient-to-r from-pink-brand via-violet-brand to-blue-brand text-white transition-all duration-200 hover:brightness-[1.06]"
             >
               Book Demo

@@ -7,7 +7,7 @@ export default function MobileCTA({ onBookClick }) {
         onClick={onBookClick}
         className="w-full flex items-center justify-center gap-2 bg-gradient-to-r from-pink-brand via-violet-brand to-blue-brand text-white font-bold p-4 rounded-xl cursor-pointer"
       >
-        🚀 Book Free 1:1 Demo
+        Register for Free Webinar
       </button>
     </div>
   );

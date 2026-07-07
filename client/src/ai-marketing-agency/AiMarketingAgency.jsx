@@ -23,12 +23,12 @@ export default function AiMarketingAgency() {
   const [isWebinarModalOpen, setIsWebinarModalOpen] = useState(false);
   useEffect(() => {
     // Set document meta
-    document.title = "Build Your Own AI Marketing Agency in 90 Days | BM Academy Pondicherry";
+    document.title = "Build Your Own AI Marketing Agency in 90 Days | BM Academy";
     const metaDescription = document.querySelector('meta[name="description"]');
     if (metaDescription) {
       metaDescription.setAttribute(
         'content',
-        "Learn. Get Clients. Earn. Be your own boss. 12 modules, real projects, mentorship till your first client. Free live webinar — register now."
+        "Learn AI tools, Meta & Google Ads, and client acquisition in 12 hands-on modules. Get mentorship till your first client. Free live webinar — register now"
       );
     }
 

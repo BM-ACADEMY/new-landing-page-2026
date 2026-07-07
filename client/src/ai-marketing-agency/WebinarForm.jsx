@@ -94,9 +94,9 @@ export default function WebinarForm({ isModal = false, onClose }) {
         </div>
       ) : (
         <>
-          <div style={{ marginBottom: '24px', paddingRight: '24px' }}>
+          <div style={{ marginBottom: '16px', paddingRight: '24px' }}>
             <h2 style={{ fontFamily: 'var(--disp)', fontWeight: 800, fontSize: '1.5rem', color: '#fff', margin: 0, lineHeight: 1.2 }}>Register for Free Webinar</h2>
-            <p style={{ color: 'var(--muted)', fontSize: '0.9rem', marginTop: '8px', marginBottom: 0 }}>Secure your spot to learn how to build your agency.</p>
+            <p style={{ color: 'var(--muted)', fontSize: '0.9rem', marginTop: '4px', marginBottom: 0 }}>Secure your spot to learn how to build your agency.</p>
           </div>
           <div className="wform-grid">
             <input
@@ -155,7 +155,7 @@ export default function WebinarForm({ isModal = false, onClose }) {
             <textarea
               id="message"
               className="wform-input"
-              style={{ minHeight: '100px', resize: 'vertical' }}
+              style={{ minHeight: '60px', resize: 'vertical' }}
               placeholder="Message/Note (Optional)"
               value={message}
               onChange={(e) => setMessage(e.target.value)}

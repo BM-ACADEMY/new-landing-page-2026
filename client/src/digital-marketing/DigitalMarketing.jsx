@@ -30,14 +30,23 @@ export default function DigitalMarketing() {
   const handleSelectProgram = (program) => {
     setSelectedProgram(program);
     setIsModalOpen(true);
+    if (window.fbq) {
+      window.fbq('track', 'CompleteRegistration');
+    }
   };
 
   const handleOpenModal = () => {
     setIsModalOpen(true);
+    if (window.fbq) {
+      window.fbq('track', 'CompleteRegistration');
+    }
   };
 
   const handleOpenWebinarModal = () => {
     setIsWebinarModalOpen(true);
+    if (window.fbq) {
+      window.fbq('track', 'Schedule');
+    }
   };
 
   useEffect(() => {

@@ -36,7 +36,7 @@ export default function WebinarForm({ isModal = false, onClose }) {
 
     setIsSubmitting(true);
 
-    const WEBHOOK_URL = "https://script.google.com/macros/s/AKfycbxbPDFD0nRWtwVPFSlzWUAvV3_h168ZE8pdYrGls0nHDy_EFZvRloTQ_iJjf6Kb7QGZ/exec";
+    const WEBHOOK_URL = "https://script.google.com/macros/s/AKfycbz0vdNWxM0bN466FSy3Q8M7rB2xJ0qJdVOCOGFiq4sSAiZWQla_46lKrDIAv0tO4WFtlg/exec";
     if (WEBHOOK_URL) {
       fetch(WEBHOOK_URL, {
         method: "POST",
@@ -95,8 +95,8 @@ export default function WebinarForm({ isModal = false, onClose }) {
       ) : (
         <>
           <div style={{ marginBottom: '24px', paddingRight: '24px' }}>
-             <h2 style={{ fontFamily: 'var(--disp)', fontWeight: 800, fontSize: '1.5rem', color: '#fff', margin: 0, lineHeight: 1.2 }}>Register for Free Webinar</h2>
-             <p style={{ color: 'var(--muted)', fontSize: '0.9rem', marginTop: '8px', marginBottom: 0 }}>Secure your spot to learn how to build your agency.</p>
+            <h2 style={{ fontFamily: 'var(--disp)', fontWeight: 800, fontSize: '1.5rem', color: '#fff', margin: 0, lineHeight: 1.2 }}>Register for Free Webinar</h2>
+            <p style={{ color: 'var(--muted)', fontSize: '0.9rem', marginTop: '8px', marginBottom: 0 }}>Secure your spot to learn how to build your agency.</p>
           </div>
           <div className="wform-grid">
             <input

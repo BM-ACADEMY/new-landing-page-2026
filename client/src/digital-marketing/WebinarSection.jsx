@@ -33,7 +33,7 @@ export default function WebinarSection({ onBookClick }) {
               <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
                 <path strokeLinecap="round" strokeLinejoin="round" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
               </svg>
-              Upcoming Webinar
+               Book Free Consultation
             </div>
             <div className="w-12"></div> {/* Spacer to keep title centered */}
           </div>
@@ -123,7 +123,7 @@ export default function WebinarSection({ onBookClick }) {
             onClick={onBookClick}
             className="inline-flex items-center justify-center gap-2.5 font-bold text-base px-8 py-4 rounded-xl cursor-pointer border-none bg-gradient-to-r from-pink-brand via-violet-brand to-blue-brand text-white shadow-[0_14px_34px_-12px_rgba(255,61,129,0.55)] transition-all duration-200 hover:-translate-y-0.5 hover:brightness-[1.06]"
           >
-            Register for the Free Webinar →
+            Free Career Strategy Session
           </button>
         </div>
 

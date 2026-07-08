@@ -15,7 +15,7 @@ export default function FinalCTA({ onBookClick }) {
           onClick={onBookClick}
           className="inline-flex items-center justify-center gap-2.5 font-bold text-base px-[26px] py-[15px] rounded-xl cursor-pointer border-none bg-gradient-to-r from-pink-brand via-violet-brand to-blue-brand text-white shadow-[0_14px_34px_-12px_rgba(255,61,129,0.55)] transition-all duration-200 hover:-translate-y-0.5 hover:brightness-[1.06] mt-[26px]"
         >
-          Register for Free Webinar →
+          Free Career Strategy Session
         </button>
         <div className="font-bold text-[1.15rem] text-white mt-[18px]">📞 099449 40051</div>
       </div>

@@ -31,12 +31,12 @@ export default function SampleCertificate() {
           <span className="text-[0.78rem] font-bold tracking-[0.06em] uppercase text-[#f7367a]">// Certificate</span>
         </h2>
         <h2 className="font-sora font-extrabold text-[1.5rem] sm:text-[2.2rem] leading-[1.14] tracking-[-0.02em] text-center mb-8 reveal">
-          Sample Webinar Certificate
+          Sample Certificate
         </h2>
         <div className="reveal overflow-hidden rounded-2xl">
           <img
             src="/images/Certificate.webp"
-            alt="Sample Webinar Certificate"
+            alt="Sample Certificate"
             className="w-full max-w-[700px] h-auto object-cover transition-transform duration-300  mx-auto"
           />
         </div>

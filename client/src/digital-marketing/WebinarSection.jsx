@@ -7,7 +7,7 @@ export default function WebinarSection({ onBookClick }) {
       <div className="absolute w-[600px] h-[600px] left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 bg-[radial-gradient(circle,rgba(255,176,32,0.06),transparent_65%)] pointer-events-none"></div>
 
       <div className="max-w-[800px] mx-auto px-5 text-center relative z-10">
-        <span className="text-[0.78rem] font-bold tracking-[0.06em] uppercase text-[#f7367a]">// FREE Live Webinar </span>
+        <span className="text-[0.78rem] font-bold tracking-[0.06em] uppercase text-[#f7367a]">// Book Free Consultation </span>
         <h2 className="font-sora font-extrabold text-[1.35rem] sm:text-[1.8rem] leading-[1.14] tracking-[-0.025em] mt-3 mb-4 text-white">
           From Zero Experience to Job-Ready – Completely Free. Join industry experts live and learn exactly what it takes to build a career in Digital Marketing.
         </h2>
@@ -88,7 +88,7 @@ export default function WebinarSection({ onBookClick }) {
                   </svg>
                 </div>
                 <span className="text-xs text-muted-brand uppercase tracking-wider">Mode</span>
-                <span className="font-sora font-bold text-white text-sm mt-1">Online Live Webinar</span>
+                <span className="font-sora font-bold text-white text-sm mt-1">Get Free Counseling</span>
                 <span className="text-[0.7rem] text-muted-brand mt-0.5">(Zoom / Google Meet)</span>
               </div>
 

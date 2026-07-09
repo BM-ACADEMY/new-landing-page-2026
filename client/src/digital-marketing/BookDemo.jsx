@@ -194,7 +194,7 @@ export default function BookDemo({ selectedProgram, isModal = false, onClose }) 
               onClick={handleBook}
               disabled={isSubmitting}
             >
-              {isSubmitting ? "Scheduling..." : "Book Demo"}
+              {isSubmitting ? "Scheduling..." : "Free Career Strategy Session"}
             </button>
           </div>
           

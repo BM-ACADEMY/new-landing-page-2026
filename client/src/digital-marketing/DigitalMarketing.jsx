@@ -45,7 +45,7 @@ export default function DigitalMarketing() {
   const handleOpenWebinarModal = () => {
     setIsWebinarModalOpen(true);
     if (window.fbq) {
-      window.fbq('track', 'Schedule');
+      window.fbq('track', 'CompleteRegistration');
     }
   };
 

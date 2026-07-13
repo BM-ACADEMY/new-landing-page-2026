@@ -5,6 +5,7 @@ import Hero from './Hero';
 import WebinarSection from './WebinarSection';
 import Fears from './Fears';
 import Skills from './Skills';
+import AIWorkflow from './AIWorkflow';
 import About from './About';
 import Roadmap from './Roadmap';
 import Guarantee from './Guarantee';
@@ -95,6 +96,7 @@ export default function DigitalMarketing() {
       <Hero onBookClick={handleOpenWebinarModal} />
       <Fears />
       <Skills />
+      <AIWorkflow />
       <About />
       <WebinarSection onBookClick={handleOpenWebinarModal} />
       <Roadmap />

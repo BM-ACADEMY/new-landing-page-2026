@@ -11,7 +11,7 @@ import Roadmap from './Roadmap';
 import Guarantee from './Guarantee';
 import Tracks from './Tracks';
 import Certificate from './Certificate';
-import SampleCertificate from './SampleCertificate';
+// import SampleCertificate from './SampleCertificate';
 // import LiveStatus from './LiveStatus';
 // import Transformation from './Transformation';
 import Testimonials from './Testimonials';
@@ -52,10 +52,10 @@ export default function DigitalMarketing() {
 
   useEffect(() => {
     // Set document meta
-    document.title = "Free Digital Marketing Webinar 2026 | Job Roadmap & Certificate";
+    document.title = "Free AI Digital Marketing Webinar 2026 | Learn AI Agents & Marketing Automation";
     const metaDescription = document.querySelector('meta[name="description"]');
     if (metaDescription) {
-      metaDescription.setAttribute('content', "Discover the real Digital Marketing roadmap for 2026. Join our FREE live webinar, learn practical job-ready skills, and get a certificate on completion.");
+      metaDescription.setAttribute('content', "Join our FREE live AI Digital Marketing One & One session  and learn how to build AI Agents, automate content creation, generate SEO-friendly content, and streamline social media marketing using AI.");
     }
 
     // Meta Pixel and Google Analytics PageView Tracking
@@ -100,7 +100,7 @@ export default function DigitalMarketing() {
       <About />
       <WebinarSection onBookClick={handleOpenWebinarModal} />
       <Roadmap />
-      <SampleCertificate />
+      {/* <SampleCertificate /> */}
       <Tracks onSelectProgram={handleSelectProgram} />
       <Guarantee />
       <Certificate />

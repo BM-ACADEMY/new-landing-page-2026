@@ -67,14 +67,10 @@ export default function WebinarSection({ onBookClick }) {
                     <path strokeLinecap="round" strokeLinejoin="round" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
                   </svg>
                 </div>
-                <div>
-                  <div className="font-sora font-extrabold text-white text-[1.05rem]">July 11, 2026</div>
-                  <div className="text-xs text-[#FFB020] font-semibold mt-0.5">Saturday · 5:00 PM – 6:00 PM</div>
+                <div className="text-[0.92rem] text-white/90 font-medium leading-relaxed">
+                  Reserve your seat and let's discuss how AI can help you grow your career or business.
                 </div>
               </div>
-              <span className="text-xs font-extrabold text-[#FFB020] border border-[#FFB020]/30 bg-[#FFB020]/10 px-3 py-1 rounded-full uppercase tracking-wider animate-pulse">
-                Next Batch
-              </span>
             </div>
 
             {/* Sub-grid: Mode and Fee */}

@@ -29,7 +29,7 @@ export default function AIWorkflow() {
       <div className="max-w-[1080px] mx-auto px-5" ref={containerRef}>
         <span className="text-[0.78rem] font-bold tracking-[0.06em] uppercase text-pink-brand">// AI AUTOMATION</span>
         <h2 className="font-sora font-extrabold text-[1.5rem] sm:text-[2.2rem] leading-[1.14] tracking-[-0.02em] mt-3 mb-0">
-          What If AI Could Handle Your Daily Marketing Tasks?
+          What If <span className="gradtext">AI</span> Could Handle Your <span className="gradtext">Digital marketing?</span>
         </h2>
         
         <div className="reveal bg-panel border border-white/9 rounded-2xl p-[30px] mt-9">

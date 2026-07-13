@@ -103,12 +103,12 @@ export default function WebinarSection({ onBookClick }) {
             </div>
 
             {/* Bonus Banner bar */}
-            <div className="border border-[#FFB020]/20 bg-[#FFB020]/5 rounded-lg p-3.5 px-4 flex items-center gap-3">
+            {/* <div className="border border-[#FFB020]/20 bg-[#FFB020]/5 rounded-lg p-3.5 px-4 flex items-center gap-3">
               <span className="text-lg">🎁</span>
               <div className="text-xs sm:text-sm text-[#DAD4EC]">
                 <strong className="text-[#FFB020]">Bonus Included:</strong> Every attendee receives a <strong className="text-white">Hard Copy Certificate</strong> to mark the beginning of their journey.
               </div>
-            </div>
+            </div> */}
 
           </div>
         </div>

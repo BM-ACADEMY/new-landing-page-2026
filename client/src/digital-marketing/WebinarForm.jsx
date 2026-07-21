@@ -59,6 +59,10 @@ export default function WebinarForm({ isModal = false, onClose }) {
 
     setIsSubmitting(false);
     setIsSuccess(true);
+
+    if (window.fbq) {
+      window.fbq('track', 'CompleteRegistration');
+    }
     
     // Auto-close modal after 3 seconds if in modal mode
     if (isModal && onClose) {
